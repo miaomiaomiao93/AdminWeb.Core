@@ -1,0 +1,3 @@
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.csproj.CoreCompileInputs.cache
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.AssemblyInfoInputs.cache
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.AssemblyInfo.cs

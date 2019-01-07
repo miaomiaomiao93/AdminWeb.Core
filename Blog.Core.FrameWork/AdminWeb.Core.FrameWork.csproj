@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="AdminWeb.Core.FrameWork.Entity\Blog.Core.FrameWork.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Blog.Core.FrameWork.cs</LastGenOutput>
+    </None>
+    <None Update="AdminWeb.Core.FrameWork.IRepository\Blog.Core.FrameWork.IRepository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Blog.Core.FrameWork.IRepository.cs</LastGenOutput>
+    </None>
+    <None Update="AdminWeb.Core.FrameWork.IServices\AdminWeb.Core.FrameWork.IServices.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AdminWeb.Core.FrameWork.IServices.cs</LastGenOutput>
+    </None>
+    <None Update="AdminWeb.Core.FrameWork.Repository\Blog.Core.FrameWork.Repository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Blog.Core.FrameWork.Repository.cs</LastGenOutput>
+    </None>
+    <None Update="AdminWeb.Core.FrameWork.Services\Blog.Core.FrameWork.Services.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Blog.Core.FrameWork.Services.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AdminWeb.Core.FrameWork.Entity\Blog.Core.FrameWork.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Blog.Core.FrameWork.tt</DependentUpon>
+    </Compile>
+    <Compile Update="AdminWeb.Core.FrameWork.IRepository\Blog.Core.FrameWork.IRepository.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Blog.Core.FrameWork.IRepository.tt</DependentUpon>
+    </Compile>
+    <Compile Update="AdminWeb.Core.FrameWork.IServices\AdminWeb.Core.FrameWork.IServices.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AdminWeb.Core.FrameWork.IServices.tt</DependentUpon>
+    </Compile>
+    <Compile Update="AdminWeb.Core.FrameWork.Repository\Blog.Core.FrameWork.Repository.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Blog.Core.FrameWork.Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Update="AdminWeb.Core.FrameWork.Services\Blog.Core.FrameWork.Services.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Blog.Core.FrameWork.Services.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

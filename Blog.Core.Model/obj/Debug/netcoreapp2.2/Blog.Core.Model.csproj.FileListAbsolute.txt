@@ -1,0 +1,10 @@
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.Model\bin\Debug\netcoreapp2.2\Blog.Core.Model.deps.json
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.Model\bin\Debug\netcoreapp2.2\Blog.Core.Model.dll
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.Model\bin\Debug\netcoreapp2.2\Blog.Core.Model.pdb
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.Model\bin\Debug\netcoreapp2.2\Blog.Core.Model.xml
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.Model\obj\Debug\netcoreapp2.2\Blog.Core.Model.csprojResolveAssemblyReference.cache
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.Model\obj\Debug\netcoreapp2.2\Blog.Core.Model.csproj.CoreCompileInputs.cache
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.Model\obj\Debug\netcoreapp2.2\Blog.Core.Model.AssemblyInfoInputs.cache
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.Model\obj\Debug\netcoreapp2.2\Blog.Core.Model.AssemblyInfo.cs
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.Model\obj\Debug\netcoreapp2.2\Blog.Core.Model.dll
+F:\Git VersionControl\AdminWeb.Core\Blog.Core.Model\obj\Debug\netcoreapp2.2\Blog.Core.Model.pdb
