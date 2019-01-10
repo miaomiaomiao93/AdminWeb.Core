@@ -5,7 +5,6 @@
 <#@ import namespace="System.IO"#>
 <#@ import namespace="System.Text"#>
 <#@ import namespace="Microsoft.VisualStudio.TextTemplating"#>
-
 <#+
 //定义管理者 manager 实体类
 class Manager

@@ -22,3 +22,28 @@ F:\Git VersionControl\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.C
 F:\Git VersionControl\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorTargetAssemblyInfo.cache
 F:\Git VersionControl\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.dll
 F:\Git VersionControl\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.pdb
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\appsettings.json
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.deps.json
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.runtimeconfig.json
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.runtimeconfig.dev.json
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.dll
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.pdb
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\Blog.Core.xml
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.dll
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IRepository.dll
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IServices.dll
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.dll
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.pdb
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IRepository.pdb
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IServices.pdb
+D:\Git\AdminWeb.Core\Blog.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.pdb
+D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.csprojAssemblyReference.cache
+D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.csproj.CoreCompileInputs.cache
+D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorAssemblyInfo.cache
+D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorAssemblyInfo.cs
+D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.AssemblyInfoInputs.cache
+D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.AssemblyInfo.cs
+D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorTargetAssemblyInfo.cache
+D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.csproj.CopyComplete
+D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.dll
+D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.pdb

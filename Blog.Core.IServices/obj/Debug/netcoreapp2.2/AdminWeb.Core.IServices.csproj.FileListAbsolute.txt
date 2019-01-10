@@ -11,3 +11,17 @@ F:\Git VersionControl\AdminWeb.Core\Blog.Core.IServices\obj\Debug\netcoreapp2.2\
 F:\Git VersionControl\AdminWeb.Core\Blog.Core.IServices\obj\Debug\netcoreapp2.2\AdminWeb.Core.IServices.pdb
 F:\Git VersionControl\AdminWeb.Core\Blog.Core.IServices\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.dll
 F:\Git VersionControl\AdminWeb.Core\Blog.Core.IServices\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.pdb
+D:\Git\AdminWeb.Core\Blog.Core.IServices\bin\Debug\netcoreapp2.2\AdminWeb.Core.IServices.deps.json
+D:\Git\AdminWeb.Core\Blog.Core.IServices\bin\Debug\netcoreapp2.2\AdminWeb.Core.IServices.dll
+D:\Git\AdminWeb.Core\Blog.Core.IServices\bin\Debug\netcoreapp2.2\AdminWeb.Core.IServices.pdb
+D:\Git\AdminWeb.Core\Blog.Core.IServices\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.dll
+D:\Git\AdminWeb.Core\Blog.Core.IServices\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.dll
+D:\Git\AdminWeb.Core\Blog.Core.IServices\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.pdb
+D:\Git\AdminWeb.Core\Blog.Core.IServices\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.pdb
+D:\Git\AdminWeb.Core\Blog.Core.IServices\obj\Debug\netcoreapp2.2\AdminWeb.Core.IServices.csprojAssemblyReference.cache
+D:\Git\AdminWeb.Core\Blog.Core.IServices\obj\Debug\netcoreapp2.2\AdminWeb.Core.IServices.csproj.CoreCompileInputs.cache
+D:\Git\AdminWeb.Core\Blog.Core.IServices\obj\Debug\netcoreapp2.2\AdminWeb.Core.IServices.AssemblyInfoInputs.cache
+D:\Git\AdminWeb.Core\Blog.Core.IServices\obj\Debug\netcoreapp2.2\AdminWeb.Core.IServices.AssemblyInfo.cs
+D:\Git\AdminWeb.Core\Blog.Core.IServices\obj\Debug\netcoreapp2.2\AdminWeb.Core.IServices.csproj.CopyComplete
+D:\Git\AdminWeb.Core\Blog.Core.IServices\obj\Debug\netcoreapp2.2\AdminWeb.Core.IServices.dll
+D:\Git\AdminWeb.Core\Blog.Core.IServices\obj\Debug\netcoreapp2.2\AdminWeb.Core.IServices.pdb

@@ -5,25 +5,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="AdminWeb.Core.FrameWork.Entity\Blog.Core.FrameWork.tt">
+    <ProjectReference Include="..\Blog.Core.Common\AdminWeb.Core.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="AdminWeb.Core.FrameWork.Entity\AdminWeb.Core.FrameWork.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Blog.Core.FrameWork.cs</LastGenOutput>
+      <LastGenOutput>AdminWeb.Core.FrameWork.cs</LastGenOutput>
     </None>
-    <None Update="AdminWeb.Core.FrameWork.IRepository\Blog.Core.FrameWork.IRepository.tt">
+    <None Update="AdminWeb.Core.FrameWork.IRepository\AdminWeb.Core.FrameWork.IRepository.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Blog.Core.FrameWork.IRepository.cs</LastGenOutput>
+      <LastGenOutput>AdminWeb.Core.FrameWork.IRepository.cs</LastGenOutput>
     </None>
     <None Update="AdminWeb.Core.FrameWork.IServices\AdminWeb.Core.FrameWork.IServices.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AdminWeb.Core.FrameWork.IServices.cs</LastGenOutput>
     </None>
-    <None Update="AdminWeb.Core.FrameWork.Repository\Blog.Core.FrameWork.Repository.tt">
+    <None Update="AdminWeb.Core.FrameWork.Repository\AdminWeb.Core.FrameWork.Repository.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Blog.Core.FrameWork.Repository.cs</LastGenOutput>
+      <LastGenOutput>AdminWeb.Core.FrameWork.Repository.cs</LastGenOutput>
     </None>
-    <None Update="AdminWeb.Core.FrameWork.Services\Blog.Core.FrameWork.Services.tt">
+    <None Update="AdminWeb.Core.FrameWork.Services\AdminWeb.Core.FrameWork.Services.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Blog.Core.FrameWork.Services.cs</LastGenOutput>
+      <LastGenOutput>AdminWeb.Core.FrameWork.Services.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
@@ -32,30 +36,30 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="AdminWeb.Core.FrameWork.Entity\Blog.Core.FrameWork.cs">
+    <Compile Update="AdminWeb.Core.FrameWork.Entity\AdminWeb.Core.FrameWork.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Blog.Core.FrameWork.tt</DependentUpon>
+      <DependentUpon>AdminWeb.Core.FrameWork.tt</DependentUpon>
     </Compile>
-    <Compile Update="AdminWeb.Core.FrameWork.IRepository\Blog.Core.FrameWork.IRepository.cs">
+    <Compile Update="AdminWeb.Core.FrameWork.IRepository\AdminWeb.Core.FrameWork.IRepository.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Blog.Core.FrameWork.IRepository.tt</DependentUpon>
+      <DependentUpon>AdminWeb.Core.FrameWork.IRepository.tt</DependentUpon>
     </Compile>
     <Compile Update="AdminWeb.Core.FrameWork.IServices\AdminWeb.Core.FrameWork.IServices.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>AdminWeb.Core.FrameWork.IServices.tt</DependentUpon>
     </Compile>
-    <Compile Update="AdminWeb.Core.FrameWork.Repository\Blog.Core.FrameWork.Repository.cs">
+    <Compile Update="AdminWeb.Core.FrameWork.Repository\AdminWeb.Core.FrameWork.Repository.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Blog.Core.FrameWork.Repository.tt</DependentUpon>
+      <DependentUpon>AdminWeb.Core.FrameWork.Repository.tt</DependentUpon>
     </Compile>
-    <Compile Update="AdminWeb.Core.FrameWork.Services\Blog.Core.FrameWork.Services.cs">
+    <Compile Update="AdminWeb.Core.FrameWork.Services\AdminWeb.Core.FrameWork.Services.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Blog.Core.FrameWork.Services.tt</DependentUpon>
+      <DependentUpon>AdminWeb.Core.FrameWork.Services.tt</DependentUpon>
     </Compile>
   </ItemGroup>
 
