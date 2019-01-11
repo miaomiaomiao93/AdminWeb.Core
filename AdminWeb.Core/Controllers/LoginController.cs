@@ -156,14 +156,11 @@ namespace AdminWeb.Core.Controllers
                     Message = "认证失败"
                 });
             }
-
-
-
         }
 
 
         /// <summary>
-        /// 
+        /// 发送jsonp格式
         /// </summary>
         /// <param name="id"></param>
         /// <param name="sub"></param>

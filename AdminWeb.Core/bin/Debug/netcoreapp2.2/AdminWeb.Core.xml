@@ -268,7 +268,7 @@
         </member>
         <member name="M:AdminWeb.Core.Controllers.LoginController.Getjsonp(System.String,System.Int64,System.String,System.Int32,System.Int32)">
             <summary>
-            
+            发送jsonp格式
             </summary>
             <param name="id"></param>
             <param name="sub"></param>
