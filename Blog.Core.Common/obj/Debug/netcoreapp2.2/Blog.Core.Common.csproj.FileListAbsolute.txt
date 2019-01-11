@@ -1,9 +1,0 @@
-F:\Git VersionControl\AdminWeb.Core\Blog.Core.Common\bin\Debug\netcoreapp2.2\Blog.Core.Common.deps.json
-F:\Git VersionControl\AdminWeb.Core\Blog.Core.Common\bin\Debug\netcoreapp2.2\Blog.Core.Common.dll
-F:\Git VersionControl\AdminWeb.Core\Blog.Core.Common\bin\Debug\netcoreapp2.2\Blog.Core.Common.pdb
-F:\Git VersionControl\AdminWeb.Core\Blog.Core.Common\obj\Debug\netcoreapp2.2\Blog.Core.Common.csprojResolveAssemblyReference.cache
-F:\Git VersionControl\AdminWeb.Core\Blog.Core.Common\obj\Debug\netcoreapp2.2\Blog.Core.Common.csproj.CoreCompileInputs.cache
-F:\Git VersionControl\AdminWeb.Core\Blog.Core.Common\obj\Debug\netcoreapp2.2\Blog.Core.Common.AssemblyInfoInputs.cache
-F:\Git VersionControl\AdminWeb.Core\Blog.Core.Common\obj\Debug\netcoreapp2.2\Blog.Core.Common.AssemblyInfo.cs
-F:\Git VersionControl\AdminWeb.Core\Blog.Core.Common\obj\Debug\netcoreapp2.2\Blog.Core.Common.dll
-F:\Git VersionControl\AdminWeb.Core\Blog.Core.Common\obj\Debug\netcoreapp2.2\Blog.Core.Common.pdb

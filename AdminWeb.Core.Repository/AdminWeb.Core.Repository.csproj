@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\AdminWeb.Core\bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlSugarCore" Version="4.9.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdminWeb.Core.Common\AdminWeb.Core.Common.csproj" />
+    <ProjectReference Include="..\AdminWeb.Core.IRepository\AdminWeb.Core.IRepository.csproj" />
+    <ProjectReference Include="..\AdminWeb.Core.Model\AdminWeb.Core.Model.csproj" />
+  </ItemGroup>
+
+</Project>
