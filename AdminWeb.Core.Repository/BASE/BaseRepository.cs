@@ -271,14 +271,14 @@ namespace AdminWeb.Core.Repository.Base
         /// <param name="intTotalCount">数据总量</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public async Task<List<TEntity>> Query(
+        public List<TEntity> Query(
             Expression<Func<TEntity, bool>> whereExpression,
             int intPageIndex,
             int intPageSize,
-            int intTotalCount,
-            string strOrderByFileds)
+            string strOrderByFileds,
+            ref int intTotalCount)
         {
-            return await Task.Run(() => db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).ToPageList(intPageIndex, intPageSize,ref intTotalCount));
+            return db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).ToPageList(intPageIndex, intPageSize);
         }
 
         /// <summary>
@@ -291,14 +291,14 @@ namespace AdminWeb.Core.Repository.Base
         /// <param name="intTotalCount">数据总量</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public async Task<List<TEntity>> Query(
+        public List<TEntity> Query(
           string strWhere,
           int intPageIndex,
           int intPageSize,
-          int intTotalCount,
-          string strOrderByFileds)
+          string strOrderByFileds,
+          ref int intTotalCount)
         {
-            return await Task.Run(() => db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToPageList(intPageIndex, intPageSize,ref intTotalCount));
+            return db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToPageList(intPageIndex, intPageSize);
         }
 
 

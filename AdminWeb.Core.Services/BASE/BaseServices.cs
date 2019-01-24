@@ -206,19 +206,19 @@ namespace AdminWeb.Core.Services.BASE
         /// <param name="intTotalCount">数据总量</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public async Task<List<TEntity>> Query(
+        public List<TEntity> Query(
             Expression<Func<TEntity, bool>> whereExpression,
             int intPageIndex,
             int intPageSize,
-            int intTotalCount,
-            string strOrderByFileds)
+            string strOrderByFileds,
+            ref int intTotalCount)
         {
-            return await baseDal.Query(
+            return  baseDal.Query(
               whereExpression,
               intPageIndex,
               intPageSize,
-              intTotalCount,
-              strOrderByFileds);
+              strOrderByFileds,
+              ref intTotalCount);
         }
 
         /// <summary>
@@ -231,19 +231,19 @@ namespace AdminWeb.Core.Services.BASE
         /// <param name="intTotalCount">数据总量</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public async Task<List<TEntity>> Query(
+        public List<TEntity> Query(
           string strWhere,
           int intPageIndex,
           int intPageSize,
-          int intTotalCount,
-          string strOrderByFileds)
+          string strOrderByFileds,
+          ref int intTotalCount)
         {
-            return await baseDal.Query(
+            return baseDal.Query(
             strWhere,
             intPageIndex,
             intPageSize,
-            intTotalCount,
-            strOrderByFileds);
+            strOrderByFileds,
+            ref intTotalCount);
         }
 
         public async Task<List<TEntity>> QueryPage(Expression<Func<TEntity, bool>> whereExpression,
