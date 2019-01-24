@@ -23,6 +23,18 @@ D:\Git\AdminWeb.Core\Blog.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model
 D:\Git\AdminWeb.Core\Blog.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.csproj.CopyComplete
 D:\Git\AdminWeb.Core\Blog.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.dll
 D:\Git\AdminWeb.Core\Blog.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.pdb
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.deps.json
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.dll
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.pdb
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.xml
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.dll
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.pdb
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.csprojResolveAssemblyReference.cache
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.csproj.CoreCompileInputs.cache
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.AssemblyInfoInputs.cache
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.AssemblyInfo.cs
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.dll
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.pdb
 D:\Git\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.deps.json
 D:\Git\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.dll
 D:\Git\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.pdb
@@ -36,15 +48,3 @@ D:\Git\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.M
 D:\Git\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.csproj.CopyComplete
 D:\Git\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.dll
 D:\Git\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.pdb
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.deps.json
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.dll
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.pdb
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.xml
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.dll
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.pdb
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.csprojResolveAssemblyReference.cache
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.csproj.CoreCompileInputs.cache
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.AssemblyInfoInputs.cache
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.AssemblyInfo.cs
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.dll
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Model\obj\Debug\netcoreapp2.2\AdminWeb.Core.Model.pdb

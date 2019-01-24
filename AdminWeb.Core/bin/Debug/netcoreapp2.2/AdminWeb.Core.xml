@@ -196,6 +196,11 @@
             <param name="signingCredentials">签名验证实体</param>
             <param name="expiration">过期时间</param>
         </member>
+        <member name="T:AdminWeb.Core.AutoMapper.CustomProfile">
+            <summary>
+            Mapper映射配置文件
+            </summary>
+        </member>
         <member name="M:AdminWeb.Core.AutoMapper.CustomProfile.#ctor">
             <summary>
             配置构造函数，用来创建关系映射
@@ -274,6 +279,31 @@
             <param name="sub"></param>
             <param name="expiresSliding"></param>
             <param name="expiresAbsoulute"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AdminWeb.Core.Controllers.ModuleController">
+            <summary>
+            菜单控制器
+            </summary>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.ModuleController.#ctor(AdminWeb.Core.IServices.IModuleServices)">
+            <summary>
+            构造器
+            </summary>
+            <param name="moduleServices"></param>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.ModuleController.Get(System.Int32)">
+            <summary>
+            获取单个菜单
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.ModuleController.ListPage(AdminWeb.Core.Model.ViewModels.ModuleViewModels)">
+            <summary>
+            获取菜单分页
+            </summary>
+            <param name="moduleViewModels"></param>
             <returns></returns>
         </member>
         <member name="T:AdminWeb.Core.Controllers.UserRoleController">

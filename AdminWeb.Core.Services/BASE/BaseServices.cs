@@ -210,12 +210,14 @@ namespace AdminWeb.Core.Services.BASE
             Expression<Func<TEntity, bool>> whereExpression,
             int intPageIndex,
             int intPageSize,
+            int intTotalCount,
             string strOrderByFileds)
         {
             return await baseDal.Query(
               whereExpression,
               intPageIndex,
               intPageSize,
+              intTotalCount,
               strOrderByFileds);
         }
 
@@ -233,12 +235,14 @@ namespace AdminWeb.Core.Services.BASE
           string strWhere,
           int intPageIndex,
           int intPageSize,
+          int intTotalCount,
           string strOrderByFileds)
         {
             return await baseDal.Query(
             strWhere,
             intPageIndex,
             intPageSize,
+            intTotalCount,
             strOrderByFileds);
         }
 

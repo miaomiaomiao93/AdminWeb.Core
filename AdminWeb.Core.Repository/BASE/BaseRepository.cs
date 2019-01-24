@@ -275,9 +275,10 @@ namespace AdminWeb.Core.Repository.Base
             Expression<Func<TEntity, bool>> whereExpression,
             int intPageIndex,
             int intPageSize,
+            int intTotalCount,
             string strOrderByFileds)
         {
-            return await Task.Run(() => db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).ToPageList(intPageIndex, intPageSize));
+            return await Task.Run(() => db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).ToPageList(intPageIndex, intPageSize,ref intTotalCount));
         }
 
         /// <summary>
@@ -294,13 +295,11 @@ namespace AdminWeb.Core.Repository.Base
           string strWhere,
           int intPageIndex,
           int intPageSize,
-
+          int intTotalCount,
           string strOrderByFileds)
         {
-            return await Task.Run(() => db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToPageList(intPageIndex, intPageSize));
+            return await Task.Run(() => db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToPageList(intPageIndex, intPageSize,ref intTotalCount));
         }
-
-     
 
 
         public async Task<List<TEntity>> QueryPage(Expression<Func<TEntity, bool>> whereExpression,
@@ -311,10 +310,6 @@ namespace AdminWeb.Core.Repository.Base
             .WhereIF(whereExpression != null, whereExpression)
             .ToPageList(intPageIndex, intPageSize));
         }
-
-
-
-
     }
 
 

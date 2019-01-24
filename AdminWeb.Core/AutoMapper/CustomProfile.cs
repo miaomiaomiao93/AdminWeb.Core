@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace AdminWeb.Core.AutoMapper
 {
+    /// <summary>
+    /// Mapper映射配置文件
+    /// </summary>
     public class CustomProfile : Profile
     {
         /// <summary>
@@ -16,6 +19,10 @@ namespace AdminWeb.Core.AutoMapper
         public CustomProfile()
         {
             CreateMap<BlogArticle, BlogViewModels>();
+            CreateMap<BlogViewModels,BlogArticle>();
+
+            CreateMap<Module, ModuleViewModels>();
+            CreateMap<ModuleViewModels, Module>();
         }
     }
 }
