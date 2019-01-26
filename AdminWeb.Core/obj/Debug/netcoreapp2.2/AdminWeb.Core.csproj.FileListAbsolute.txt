@@ -47,6 +47,31 @@ D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorTarget
 D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.csproj.CopyComplete
 D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.dll
 D:\Git\AdminWeb.Core\Blog.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.pdb
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\appsettings.json
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.deps.json
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.runtimeconfig.json
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.runtimeconfig.dev.json
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.dll
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.pdb
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.xml
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.dll
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IRepository.dll
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IServices.dll
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.dll
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.pdb
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IRepository.pdb
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IServices.pdb
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.pdb
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.xml
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.csprojResolveAssemblyReference.cache
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.csproj.CoreCompileInputs.cache
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorAssemblyInfo.cache
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorAssemblyInfo.cs
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.AssemblyInfoInputs.cache
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.AssemblyInfo.cs
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorTargetAssemblyInfo.cache
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.dll
+F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.pdb
 D:\Git\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\appsettings.json
 D:\Git\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.deps.json
 D:\Git\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.runtimeconfig.json
@@ -73,28 +98,3 @@ D:\Git\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorTa
 D:\Git\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.csproj.CopyComplete
 D:\Git\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.dll
 D:\Git\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.pdb
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\appsettings.json
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.deps.json
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.runtimeconfig.json
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.runtimeconfig.dev.json
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.dll
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.pdb
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.xml
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.dll
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IRepository.dll
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IServices.dll
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.dll
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.pdb
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IRepository.pdb
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.IServices.pdb
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.pdb
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Model.xml
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.csprojResolveAssemblyReference.cache
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.csproj.CoreCompileInputs.cache
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorAssemblyInfo.cache
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorAssemblyInfo.cs
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.AssemblyInfoInputs.cache
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.AssemblyInfo.cs
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.RazorTargetAssemblyInfo.cache
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.dll
-F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core\obj\Debug\netcoreapp2.2\AdminWeb.Core.pdb

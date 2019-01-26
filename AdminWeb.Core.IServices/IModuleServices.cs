@@ -12,6 +12,6 @@ namespace AdminWeb.Core.IServices
 	/// </summary>	
     public interface IModuleServices :IBaseServices<Module>
 	{
-        Task<List<ModuleViewModels>> ListPageModules(ModuleViewModels moduleViewModels);
+        List<ModuleViewModels> ListPageModules(ModuleViewModels moduleViewModels);
     }
 }

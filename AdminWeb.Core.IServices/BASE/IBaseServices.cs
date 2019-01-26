@@ -38,7 +38,7 @@ namespace AdminWeb.Core.IServices.BASE
 
         List<TEntity> Query(
             Expression<Func<TEntity, bool>> whereExpression, int intPageIndex, int intPageSize, string strOrderByFileds, ref int intTotalCount);
-        List<TEntity> Query(string strWhere, int intPageIndex, int intPageSize, string strOrderByFileds, ref int intTotalCount);
+        List<dynamic> Query(string strWhere, int intPageIndex, int intPageSize, string strOrderByFileds, ref int intTotalCount);
 
 
         Task<List<TEntity>> QueryPage(Expression<Func<TEntity, bool>> whereExpression, int intPageIndex = 0, int intPageSize = 20, string strOrderByFileds = null);

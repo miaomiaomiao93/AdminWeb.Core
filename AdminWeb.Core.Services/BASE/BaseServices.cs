@@ -231,7 +231,7 @@ namespace AdminWeb.Core.Services.BASE
         /// <param name="intTotalCount">数据总量</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public List<TEntity> Query(
+        public List<dynamic> Query(
           string strWhere,
           int intPageIndex,
           int intPageSize,

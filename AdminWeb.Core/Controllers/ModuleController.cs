@@ -44,18 +44,17 @@ namespace AdminWeb.Core.Controllers
             });
         }
 
-        ///// <summary>
-        ///// 获取菜单分页
-        ///// </summary>
-        ///// <param name="moduleViewModels"></param>
-        ///// <returns></returns>
-        //[Route("ListPage")]
-        //[HttpPost]
-        //public async Task<object> ListPage([FromBody] ModuleViewModels moduleViewModels)
-        //{
-
-        //    var models = await moduleServices.ListPageModules(moduleViewModels);
-        //    return Ok(new TableModel<ModuleViewModels>() { Code = 1, Count = moduleViewModels.TotalCount, Data = models, Msg = "success" });
-        //}
+        /// <summary>
+        /// 获取菜单分页
+        /// </summary>
+        /// <param name="moduleViewModels"></param>
+        /// <returns></returns>
+        [Route("ListPage")]
+        [HttpPost]
+        public  IActionResult ListPage([FromBody] ModuleViewModels moduleViewModels)
+        {
+            var models = moduleServices.ListPageModules(moduleViewModels);
+            return Ok(new TableModel<ModuleViewModels>() { Code = 1, Count = moduleViewModels.TotalCount, Data = models, Msg = "success" });
+        }
     }
 }

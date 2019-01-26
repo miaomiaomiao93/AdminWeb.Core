@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AdminWeb.Core.Repository.Base
 {
-    public  class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, new()
+    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, new()
     {
         private DbContext context;
         private SqlSugarClient db;
@@ -259,7 +259,7 @@ namespace AdminWeb.Core.Repository.Base
             return await Task.Run(() => db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).Take(intTop).ToList());
         }
 
-   
+
 
         /// <summary>
         /// 功能描述:分页查询
@@ -268,8 +268,8 @@ namespace AdminWeb.Core.Repository.Base
         /// <param name="whereExpression">条件表达式</param>
         /// <param name="intPageIndex">页码（下标0）</param>
         /// <param name="intPageSize">页大小</param>
-        /// <param name="intTotalCount">数据总量</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
+        /// <param name="intTotalCount">数据总量</param>
         /// <returns>数据列表</returns>
         public List<TEntity> Query(
             Expression<Func<TEntity, bool>> whereExpression,
@@ -278,7 +278,7 @@ namespace AdminWeb.Core.Repository.Base
             string strOrderByFileds,
             ref int intTotalCount)
         {
-            return db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).ToPageList(intPageIndex, intPageSize);
+            return db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).ToPageList(intPageIndex, intPageSize, ref intTotalCount);
         }
 
         /// <summary>
@@ -288,17 +288,17 @@ namespace AdminWeb.Core.Repository.Base
         /// <param name="strWhere">条件</param>
         /// <param name="intPageIndex">页码（下标0）</param>
         /// <param name="intPageSize">页大小</param>
-        /// <param name="intTotalCount">数据总量</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
+        /// <param name="intTotalCount">数据总量</param>
         /// <returns>数据列表</returns>
-        public List<TEntity> Query(
+        public List<dynamic> Query(
           string strWhere,
           int intPageIndex,
           int intPageSize,
           string strOrderByFileds,
           ref int intTotalCount)
         {
-            return db.Queryable<TEntity>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToPageList(intPageIndex, intPageSize);
+            return db.Queryable<dynamic>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToPageList(intPageIndex, intPageSize, ref intTotalCount);
         }
 
 

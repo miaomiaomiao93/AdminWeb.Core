@@ -11944,7 +11944,7 @@
       ]
     },
     "System.IO.MemoryMappedFiles/4.3.0": {
-      "sha512": "uL5U9yjr6mYO3bcb62GIPgESToNiBi3glt5bqMj6j0sOOUVhL5mIVpqDKqbM8QK7UcqsLoZ1AyGTTVhYNmvh0A==",
+      "sha512": "EAQV3BW5P0+XSdyf+pg0m/t7rkCqLdHM9RKYgA4MZF4bhkPvKBfgMKzo5NuPT1WR/k4R+NRgxzgdtjIZzI4q9A==",
       "type": "package",
       "path": "system.io.memorymappedfiles/4.3.0",
       "files": [
@@ -12038,7 +12038,7 @@
       ]
     },
     "System.IO.UnmanagedMemoryStream/4.3.0": {
-      "sha512": "Es33hPVxtRisdOC0qWJcWThpWk4TTgZ69sfR1sy0HiGJ/pPFGFy65tlkrtpYbRkXj5DjKHe1UYLvxCtm+DRA0A==",
+      "sha512": "ZfJUw22CrA8Aqvc9ftTO2WzP+zZlNQGmlzp1flxewRozlcMhRgMsWQLVAD2yEokUSGHNENz456Ng+WVOIb8RmA==",
       "type": "package",
       "path": "system.io.unmanagedmemorystream/4.3.0",
       "files": [
@@ -12653,7 +12653,7 @@
       ]
     },
     "System.Net.Security/4.3.1": {
-      "sha512": "a+xkmIifPJO3PzGSbhhHZGQ+CNeOMDENoxEVVuoCq9e0CKFeGlSz77rvQD2ZbzAm7JU3ZsuC949tpd4rGV5m7Q==",
+      "sha512": "/ZOI/WVA0TiHh538wRgv24D6M4JnWF2j9+i/kH5QRsivAThzaCm4uOPVajVBoo3vJUmMYkd65Z0jBU7v4+j9FQ==",
       "type": "package",
       "path": "system.net.security/4.3.1",
       "files": [
@@ -14895,7 +14895,7 @@
       ]
     },
     "System.Threading.Overlapped/4.3.0": {
-      "sha512": "JpukcZA7kre2gQ7GrhtvZu1xv/LVEG5HV9AajQ3XV7l36T6ICalw/llfkBHeK/eqo8UWpMNqkWGCzzlSuqE6pg==",
+      "sha512": "JWEtWIoYBHzMmgt2I/1e4FFG6veDL4yzA1Y7iuEY2G+GyZyrzqx/GQlM92M+d81D1cH2dp2KRhbZdQebn8Q+RA==",
       "type": "package",
       "path": "system.threading.overlapped/4.3.0",
       "files": [
@@ -15602,26 +15602,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Users\\sbk\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "F:\\Git VersionControl\\AdminWeb.Core\\AdminWeb.Core\\AdminWeb.Core.csproj",
+      "projectUniqueName": "D:\\Git\\AdminWeb.Core\\AdminWeb.Core\\AdminWeb.Core.csproj",
       "projectName": "AdminWeb.Core",
-      "projectPath": "F:\\Git VersionControl\\AdminWeb.Core\\AdminWeb.Core\\AdminWeb.Core.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "F:\\Git VersionControl\\AdminWeb.Core\\AdminWeb.Core\\obj\\",
+      "projectPath": "D:\\Git\\AdminWeb.Core\\AdminWeb.Core\\AdminWeb.Core.csproj",
+      "packagesPath": "C:\\Users\\sbk\\.nuget\\packages\\",
+      "outputPath": "D:\\Git\\AdminWeb.Core\\AdminWeb.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sbk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -15634,14 +15631,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "F:\\Git VersionControl\\AdminWeb.Core\\AdminWeb.Core.IRepository\\AdminWeb.Core.IRepository.csproj": {
-              "projectPath": "F:\\Git VersionControl\\AdminWeb.Core\\AdminWeb.Core.IRepository\\AdminWeb.Core.IRepository.csproj"
+            "D:\\Git\\AdminWeb.Core\\AdminWeb.Core.Common\\AdminWeb.Core.Common.csproj": {
+              "projectPath": "D:\\Git\\AdminWeb.Core\\AdminWeb.Core.Common\\AdminWeb.Core.Common.csproj"
             },
-            "F:\\Git VersionControl\\AdminWeb.Core\\AdminWeb.Core.IServices\\AdminWeb.Core.IServices.csproj": {
-              "projectPath": "F:\\Git VersionControl\\AdminWeb.Core\\AdminWeb.Core.IServices\\AdminWeb.Core.IServices.csproj"
+            "D:\\Git\\AdminWeb.Core\\AdminWeb.Core.IRepository\\AdminWeb.Core.IRepository.csproj": {
+              "projectPath": "D:\\Git\\AdminWeb.Core\\AdminWeb.Core.IRepository\\AdminWeb.Core.IRepository.csproj"
             },
-            "F:\\Git VersionControl\\AdminWeb.Core\\AdminWeb.Core.Common\\AdminWeb.Core.Common.csproj": {
-              "projectPath": "F:\\Git VersionControl\\AdminWeb.Core\\AdminWeb.Core.Common\\AdminWeb.Core.Common.csproj"
+            "D:\\Git\\AdminWeb.Core\\AdminWeb.Core.IServices\\AdminWeb.Core.IServices.csproj": {
+              "projectPath": "D:\\Git\\AdminWeb.Core\\AdminWeb.Core.IServices\\AdminWeb.Core.IServices.csproj"
             }
           }
         }
@@ -15655,53 +15652,53 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
-            "version": "6.0.0"
+            "version": "[6.0.0, )"
           },
           "Autofac.Extensions.DependencyInjection": {
             "target": "Package",
-            "version": "4.3.1"
-          },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "2.2.0"
-          },
-          "MiniProfiler.AspNetCore.Mvc": {
-            "target": "Package",
-            "version": "4.0.138"
-          },
-          "log4net": {
-            "target": "Package",
-            "version": "2.0.8"
-          },
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "2.2.0",
-            "autoReferenced": true
+            "version": "[4.3.1, )"
           },
           "Autofac.Extras.DynamicProxy": {
             "target": "Package",
-            "version": "4.5.0"
-          },
-          "sqlSugarCore": {
-            "target": "Package",
-            "version": "4.9.7"
-          },
-          "Swashbuckle.AspNetCore": {
-            "target": "Package",
-            "version": "4.0.1"
-          },
-          "AutoMapper": {
-            "target": "Package",
-            "version": "8.0.0"
+            "version": "[4.5.0, )"
           },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.2.0",
+            "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.2.0, )",
+            "autoReferenced": true
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "MiniProfiler.AspNetCore.Mvc": {
+            "target": "Package",
+            "version": "[4.0.138, )"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[4.0.1, )"
+          },
+          "log4net": {
+            "target": "Package",
+            "version": "[2.0.8, )"
+          },
+          "sqlSugarCore": {
+            "target": "Package",
+            "version": "[4.9.7, )"
           }
         },
         "imports": [

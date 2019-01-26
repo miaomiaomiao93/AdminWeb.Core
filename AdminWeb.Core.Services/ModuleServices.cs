@@ -7,6 +7,7 @@ using AdminWeb.Core.Model.ViewModels;
 using AdminWeb.Core.Model;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using SqlSugar;
 
 namespace AdminWeb.Core.Services
 {	
@@ -26,35 +27,35 @@ namespace AdminWeb.Core.Services
         }
 
 
-        ///// <summary>
-        ///// 获取菜单分页
-        ///// </summary>
-        ///// <param name="moduleViewModels"></param>
-        ///// <returns></returns>
-        //public async Task<List<ModuleViewModels>> ListPageModules(ModuleViewModels moduleViewModels)
-        //{
-        //    List<ModuleViewModels> viewModels = new List<ModuleViewModels>();
-        //    var models = await dal.Query();
-        //    var query ="";
-        //    if (!string.IsNullOrEmpty(moduleViewModels.Name))
-        //    {
-        //        query = query + "s => s.Name==" + moduleViewModels.Name;
-        //    }
-        //    if (!string.IsNullOrEmpty(moduleViewModels.Action))
-        //    {
-        //        query = query + "&&s.Action==" + moduleViewModels.Action;
+        /// <summary>
+        /// 获取菜单分页
+        /// </summary>
+        /// <param name="moduleViewModels"></param>
+        /// <returns></returns>
+        public List<ModuleViewModels> ListPageModules(ModuleViewModels moduleViewModels)
+        {
+            List<ModuleViewModels> viewModels = new List<ModuleViewModels>();
 
-        //    }
-        //    var total = moduleViewModels.TotalCount;
-        //    var models1 =dal.Query(query, moduleViewModels.PageIndex, moduleViewModels.PageSize, moduleViewModels.OrderByFileds,ref total);
+            var total = moduleViewModels.TotalCount;
+            var orderByFileds = !string.IsNullOrEmpty(moduleViewModels.OrderByFileds)?"": moduleViewModels.OrderByFileds;
 
-        //    foreach (var s in models)
-        //    {
-        //        viewModels.Add(IMapper.Map<ModuleViewModels>(s));
-        //    }
+            //动态拼接拉姆达
+            var query = Expressionable.Create<Module>().AndIF(!string.IsNullOrEmpty(moduleViewModels.Name),s=>s.Name== moduleViewModels.Name).AndIF(!string.IsNullOrEmpty(moduleViewModels.Action),s=>s.Action== moduleViewModels.Action).ToExpression();
 
-        //    return viewModels;
-        //}
+
+            var models = dal.Query(query, moduleViewModels.PageIndex, moduleViewModels.PageSize, moduleViewModels.OrderByFileds, ref total);
+
+            var query1 = @"select *from Module";
+
+            var sss = dal.Query(query1, moduleViewModels.PageIndex, moduleViewModels.PageSize, moduleViewModels.OrderByFileds, ref total);
+
+
+            foreach (var s in models)
+            {
+                viewModels.Add(IMapper.Map<ModuleViewModels>(s));
+            }
+            return viewModels;
+        }
 
     }
 }
