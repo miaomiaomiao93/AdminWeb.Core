@@ -37,18 +37,15 @@ namespace AdminWeb.Core.Services
             List<ModuleViewModels> viewModels = new List<ModuleViewModels>();
 
             var total = moduleViewModels.TotalCount;
-            var orderByFileds = !string.IsNullOrEmpty(moduleViewModels.OrderByFileds)?"": moduleViewModels.OrderByFileds;
+            var orderByFileds = !string.IsNullOrEmpty(moduleViewModels.OrderByFileds) ? "" : moduleViewModels.OrderByFileds;
 
             //动态拼接拉姆达
-            var query = Expressionable.Create<Module>().AndIF(!string.IsNullOrEmpty(moduleViewModels.Name),s=>s.Name== moduleViewModels.Name).AndIF(!string.IsNullOrEmpty(moduleViewModels.Action),s=>s.Action== moduleViewModels.Action).ToExpression();
+            var query = Expressionable.Create<Module>().AndIF(!string.IsNullOrEmpty(moduleViewModels.Name), s => s.Name == moduleViewModels.Name).AndIF(!string.IsNullOrEmpty(moduleViewModels.Action), s => s.Action == moduleViewModels.Action).ToExpression();
 
 
             var models = dal.Query(query, moduleViewModels.PageIndex, moduleViewModels.PageSize, moduleViewModels.OrderByFileds, ref total);
 
-            var query1 = @"select *from Module";
-
-            var sss = dal.Query(query1, moduleViewModels.PageIndex, moduleViewModels.PageSize, moduleViewModels.OrderByFileds, ref total);
-
+            var models2 = dal.GetSimpleClient().Queryable<Module, ModulePermission>((ml, mp) => new object[] { JoinType.Left, ml.Id == mp.ModuleId }).WhereIF(!string.IsNullOrEmpty(moduleViewModels.Name), (ml, mp) => ml.Name == moduleViewModels.Name).Select((ml, mp) =>new ModulePermission {CreateBy=mp.CreateBy,CreateTime=mp.CreateTime }).ToPageList(moduleViewModels.PageIndex, moduleViewModels.PageSize, ref total);
 
             foreach (var s in models)
             {

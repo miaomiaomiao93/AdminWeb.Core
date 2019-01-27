@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SqlSugar;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
@@ -6,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace AdminWeb.Core.IServices.BASE
 {
-    public interface IBaseServices<TEntity> where TEntity : class
+    public interface IBaseServices<TEntity> where TEntity : class,new()
     {
 
+        SqlSugarClient GetSimpleClient();
         Task<TEntity> QueryByID(object objId);
         Task<TEntity> QueryByID(object objId, bool blnUseCache = false);
         Task<List<TEntity>> QueryByIDs(object[] lstIds);
@@ -38,7 +40,7 @@ namespace AdminWeb.Core.IServices.BASE
 
         List<TEntity> Query(
             Expression<Func<TEntity, bool>> whereExpression, int intPageIndex, int intPageSize, string strOrderByFileds, ref int intTotalCount);
-        List<dynamic> Query(string strWhere, int intPageIndex, int intPageSize, string strOrderByFileds, ref int intTotalCount);
+        List<dynamic> QueryPage(Expression<Func<dynamic, bool>> whereExpression, int intPageIndex, int intPageSize, string strOrderByFileds, ref int intTotalCount);
 
 
         Task<List<TEntity>> QueryPage(Expression<Func<TEntity, bool>> whereExpression, int intPageIndex = 0, int intPageSize = 20, string strOrderByFileds = null);

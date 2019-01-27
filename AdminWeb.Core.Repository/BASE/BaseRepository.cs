@@ -12,8 +12,13 @@ namespace AdminWeb.Core.Repository.Base
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, new()
     {
         private DbContext context;
-        private SqlSugarClient db;
-        private SimpleClient<TEntity> entityDB;
+        public SqlSugarClient db;
+        public SimpleClient<TEntity> entityDB;
+
+        public SqlSugarClient GetSimpleClient()
+        {
+            return db;
+        }
 
         public DbContext Context
         {
@@ -291,14 +296,14 @@ namespace AdminWeb.Core.Repository.Base
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <param name="intTotalCount">数据总量</param>
         /// <returns>数据列表</returns>
-        public List<dynamic> Query(
-          string strWhere,
+        public List<dynamic> QueryPage(
+          Expression<Func<dynamic, bool>> whereExpression,
           int intPageIndex,
           int intPageSize,
           string strOrderByFileds,
           ref int intTotalCount)
         {
-            return db.Queryable<dynamic>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(!string.IsNullOrEmpty(strWhere), strWhere).ToPageList(intPageIndex, intPageSize, ref intTotalCount);
+            return db.Queryable<dynamic>().OrderByIF(!string.IsNullOrEmpty(strOrderByFileds), strOrderByFileds).WhereIF(whereExpression != null, whereExpression).ToPageList(intPageIndex, intPageSize, ref intTotalCount);
         }
 
 
@@ -310,6 +315,7 @@ namespace AdminWeb.Core.Repository.Base
             .WhereIF(whereExpression != null, whereExpression)
             .ToPageList(intPageIndex, intPageSize));
         }
+
     }
 
 

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using SqlSugar;
 
 namespace AdminWeb.Core.Services.BASE
 {
@@ -13,6 +14,11 @@ namespace AdminWeb.Core.Services.BASE
         //public IBaseRepository<TEntity> baseDal = new BaseRepository<TEntity>();
         public IBaseRepository<TEntity> baseDal;//通过在子类的构造函数中注入，这里是基类，不用构造函数
 
+        //获取实对象实力
+        public SqlSugarClient GetSimpleClient()
+        {
+            return baseDal.GetSimpleClient();
+        }
         public async Task<TEntity> QueryByID(object objId)
         {
             return await baseDal.QueryByID(objId);
@@ -231,15 +237,15 @@ namespace AdminWeb.Core.Services.BASE
         /// <param name="intTotalCount">数据总量</param>
         /// <param name="strOrderByFileds">排序字段，如name asc,age desc</param>
         /// <returns>数据列表</returns>
-        public List<dynamic> Query(
-          string strWhere,
+        public List<dynamic> QueryPage(
+          Expression<Func<dynamic, bool>> whereExpression,
           int intPageIndex,
           int intPageSize,
           string strOrderByFileds,
           ref int intTotalCount)
         {
-            return baseDal.Query(
-            strWhere,
+            return baseDal.QueryPage(
+            whereExpression,
             intPageIndex,
             intPageSize,
             strOrderByFileds,
@@ -252,6 +258,7 @@ namespace AdminWeb.Core.Services.BASE
             return await baseDal.QueryPage(whereExpression,
          intPageIndex = 0, intPageSize, strOrderByFileds);
         }
+
 
     }
 
