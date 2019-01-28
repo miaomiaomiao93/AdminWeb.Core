@@ -10,11 +10,3 @@ D:\Git\AdminWeb.Core\Blog.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.F
 D:\Git\AdminWeb.Core\Blog.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.AssemblyInfoInputs.cache
 D:\Git\AdminWeb.Core\Blog.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.AssemblyInfo.cs
 D:\Git\AdminWeb.Core\Blog.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.csproj.CopyComplete
-D:\Git\AdminWeb.Core\AdminWeb.Core.FrameWork\bin\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.deps.json
-D:\Git\AdminWeb.Core\AdminWeb.Core.FrameWork\bin\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.dll
-D:\Git\AdminWeb.Core\AdminWeb.Core.FrameWork\bin\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.pdb
-D:\Git\AdminWeb.Core\AdminWeb.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.csproj.CoreCompileInputs.cache
-D:\Git\AdminWeb.Core\AdminWeb.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.AssemblyInfoInputs.cache
-D:\Git\AdminWeb.Core\AdminWeb.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.AssemblyInfo.cs
-D:\Git\AdminWeb.Core\AdminWeb.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.dll
-D:\Git\AdminWeb.Core\AdminWeb.Core.FrameWork\obj\Debug\netcoreapp2.2\AdminWeb.Core.FrameWork.pdb

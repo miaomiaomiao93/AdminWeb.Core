@@ -12,19 +12,6 @@ namespace AdminWeb.Core.Model.Models
     /// </summary>
     public class Role : RootEntity
     {
-        public Role()
-        {
-        }
-        public Role(string name)
-        {
-            Name = name;
-            Description = "";
-            OrderSort = 1;
-            Enabled = true;
-            CreateTime = DateTime.Now;
-            ModifyTime = DateTime.Now;
-
-        }
 
         /// <summary>
         ///获取或设置是否禁用，逻辑上的删除，非物理删除

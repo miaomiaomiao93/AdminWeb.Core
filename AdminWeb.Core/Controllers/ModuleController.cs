@@ -32,15 +32,15 @@ namespace AdminWeb.Core.Controllers
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
-        [Route("Get")]
+        [Route("GetModule")]
         [HttpGet]
-        public async Task<object> Get(int Id)
+        public async Task<object> GetModule(int Id)
         {
-            var model =await moduleServices.QueryByID(Id);
-            return Ok(new
+            var model = await moduleServices.GetModule(Id);
+            return Ok(new MessageModel<ModuleViewModels>()
             {
-                success = true,
-                data = model
+                Success = true,
+                Data = model
             });
         }
 
@@ -51,10 +51,62 @@ namespace AdminWeb.Core.Controllers
         /// <returns></returns>
         [Route("ListPage")]
         [HttpPost]
-        public  IActionResult ListPage([FromBody] ModuleViewModels moduleViewModels)
+        public IActionResult ListPage([FromBody] ModuleViewModels moduleViewModels)
         {
             var models = moduleServices.ListPageModules(moduleViewModels);
             return Ok(new TableModel<ModuleViewModels>() { Code = 1, Count = moduleViewModels.TotalCount, Data = models, Msg = "success" });
+        }
+
+        /// <summary>
+        /// 添加菜单
+        /// </summary>
+        /// <param name="moduleViewModels"></param>
+        /// <returns></returns>
+        [Route("AddModule")]
+        [HttpPost]
+        public async Task<IActionResult> AddModule([FromBody] ModuleViewModels moduleViewModels)
+        {
+            var result = await moduleServices.AddModule(moduleViewModels);
+            return Ok(new MessageModel<ModuleViewModels>()
+            {
+                Success = result,
+                Msg = "菜单添加成功"
+            });
+        }
+
+
+        /// <summary>
+        /// 更新菜单信息
+        /// </summary>
+        /// <param name="moduleViewModels"></param>
+        /// <returns></returns>
+        [Route("UpdateModule")]
+        [HttpPost]
+        public async Task<IActionResult> UpdateModule([FromBody] ModuleViewModels moduleViewModels)
+        {
+            var result = await moduleServices.UpdateModule(moduleViewModels);
+            return Ok(new MessageModel<ModuleViewModels>()
+            {
+                Success = result,
+                Msg = "菜单更新成功"
+            });
+        }
+
+        /// <summary>
+        /// 删除菜单信息
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        [Route("DeleteModule")]
+        [HttpGet]
+        public async Task<IActionResult> DeleteModule(int Id)
+        {
+            var result = await moduleServices.DeleteModule(Id);
+            return Ok(new MessageModel<ModuleViewModels>()
+            {
+                Success = result,
+                Msg = "菜单删除成功"
+            });
         }
     }
 }

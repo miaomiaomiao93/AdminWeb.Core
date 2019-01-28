@@ -12,20 +12,6 @@ namespace AdminWeb.Core.Model.Models
     /// </summary>
     public class sysUserInfo
     {
-        public sysUserInfo() { }
-
-        public sysUserInfo(string loginName, string loginPWD)
-        {
-            uLoginName = loginName;
-            uLoginPWD = loginPWD;
-            uRealName = uLoginName;
-            uStatus = 0;
-            uCreateTime = DateTime.Now;
-            uUpdateTime = DateTime.Now;
-            uLastErrTime = DateTime.Now;
-            uErrorCount = 0;
-
-        }
         /// <summary>
         /// 用户ID
         /// </summary>

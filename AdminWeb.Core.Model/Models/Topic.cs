@@ -7,16 +7,11 @@ using System.Threading.Tasks;
 
 namespace AdminWeb.Core.Model.Models
 {
-    /// <summary>博客文章
-    /// 
-    /// </summary
+    /// <summary>
+    /// 博客文章
+    /// </summary>
     public class Topic:RootEntity
     {
-        public Topic()
-        {
-            this.TopicDetail = new List<TopicDetail>();
-            this.tUpdatetime = DateTime.Now;
-        }
         [SugarColumn(Length = 200, IsNullable = true)]
         public string tLogo { get; set; }
 
@@ -39,7 +34,5 @@ namespace AdminWeb.Core.Model.Models
         public DateTime tCreatetime { get; set; }
         public DateTime tUpdatetime { get; set; }
 
-        [SugarColumn(IsIgnore = true)]
-        public virtual ICollection<TopicDetail> TopicDetail { get; set; }
     }
 }

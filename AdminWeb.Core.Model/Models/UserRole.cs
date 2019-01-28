@@ -12,17 +12,6 @@ namespace AdminWeb.Core.Model.Models
     /// </summary>
     public class UserRole : RootEntity
     {
-        public UserRole() { }
-
-        public UserRole(int uid, int rid)
-        {
-            UserId = uid;
-            RoleId = rid;
-            CreateTime = DateTime.Now;
-        }
-
-
-
         /// <summary>
         ///获取或设置是否禁用，逻辑上的删除，非物理删除
         /// </summary>

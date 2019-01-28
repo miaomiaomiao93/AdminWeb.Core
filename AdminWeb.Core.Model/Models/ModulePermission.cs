@@ -57,7 +57,5 @@ namespace AdminWeb.Core.Model.Models
         [SugarColumn(IsNullable = true)]
         public DateTime? ModifyTime { get; set; }
 
-        //public virtual Module Module { get; set; }
-        //public virtual Permission Permission { get; set; }
     }
 }

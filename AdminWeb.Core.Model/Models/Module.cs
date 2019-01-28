@@ -12,14 +12,6 @@ namespace AdminWeb.Core.Model.Models
     /// </summary>
     public class Module : RootEntity
     {
-        public Module()
-        {
-            //this.ChildModule = new List<Module>();
-            //this.ModulePermission = new List<ModulePermission>();
-            //this.RoleModulePermission = new List<RoleModulePermission>();
-        }
-
-
         /// <summary>
         ///获取或设置是否禁用，逻辑上的删除，非物理删除
         /// </summary>
@@ -113,9 +105,5 @@ namespace AdminWeb.Core.Model.Models
         [SugarColumn(IsNullable = true)]
         public DateTime? ModifyTime { get; set; }
 
-        //public virtual Module ParentModule { get; set; }
-        //public virtual ICollection<Module> ChildModule { get; set; }
-        //public virtual ICollection<ModulePermission> ModulePermission { get; set; }
-        //public virtual ICollection<RoleModulePermission> RoleModulePermission { get; set; }
     }
 }

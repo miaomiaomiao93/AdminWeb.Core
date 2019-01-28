@@ -18,9 +18,13 @@ namespace AdminWeb.Core.Model
         /// </summary>
         public string Msg { get; set; }
         /// <summary>
+        /// 返回单个
+        /// </summary>
+        public T Data { get; set; }
+        /// <summary>
         /// 返回数据集合
         /// </summary>
-        public List<T> Data { get; set; }
+        public List<T> Datas { get; set; }
 
     }
 }

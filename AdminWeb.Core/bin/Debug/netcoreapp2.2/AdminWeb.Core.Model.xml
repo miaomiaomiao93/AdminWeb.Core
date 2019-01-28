@@ -41,6 +41,11 @@
         </member>
         <member name="P:AdminWeb.Core.Model.MessageModel`1.Data">
             <summary>
+            返回单个
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.MessageModel`1.Datas">
+            <summary>
             返回数据集合
             </summary>
         </member>
@@ -611,8 +616,16 @@
             错误次数 
              </summary>
         </member>
-        <!-- 对于成员“T:AdminWeb.Core.Model.Models.Topic”忽略有格式错误的 XML 注释 -->
-        <!-- 对于成员“T:AdminWeb.Core.Model.Models.TopicDetail”忽略有格式错误的 XML 注释 -->
+        <member name="T:AdminWeb.Core.Model.Models.Topic">
+            <summary>
+            博客文章
+            </summary>
+        </member>
+        <member name="T:AdminWeb.Core.Model.Models.TopicDetail">
+            <summary>
+            博客文章
+            </summary>
+        </member>
         <member name="T:AdminWeb.Core.Model.Models.UserRole">
             <summary>
             用户跟角色关联表

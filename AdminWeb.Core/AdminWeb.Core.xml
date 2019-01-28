@@ -292,7 +292,7 @@
             </summary>
             <param name="moduleServices"></param>
         </member>
-        <member name="M:AdminWeb.Core.Controllers.ModuleController.Get(System.Int32)">
+        <member name="M:AdminWeb.Core.Controllers.ModuleController.GetModule(System.Int32)">
             <summary>
             获取单个菜单
             </summary>
@@ -304,6 +304,27 @@
             获取菜单分页
             </summary>
             <param name="moduleViewModels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.ModuleController.AddModule(AdminWeb.Core.Model.ViewModels.ModuleViewModels)">
+            <summary>
+            添加菜单
+            </summary>
+            <param name="moduleViewModels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.ModuleController.UpdateModule(AdminWeb.Core.Model.ViewModels.ModuleViewModels)">
+            <summary>
+            更新菜单信息
+            </summary>
+            <param name="moduleViewModels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.ModuleController.DeleteModule(System.Int32)">
+            <summary>
+            删除菜单信息
+            </summary>
+            <param name="Id"></param>
             <returns></returns>
         </member>
         <member name="T:AdminWeb.Core.Controllers.UserRoleController">

@@ -45,13 +45,69 @@ namespace AdminWeb.Core.Services
 
             var models = dal.Query(query, moduleViewModels.PageIndex, moduleViewModels.PageSize, moduleViewModels.OrderByFileds, ref total);
 
-            var models2 = dal.GetSimpleClient().Queryable<Module, ModulePermission>((ml, mp) => new object[] { JoinType.Left, ml.Id == mp.ModuleId }).WhereIF(!string.IsNullOrEmpty(moduleViewModels.Name), (ml, mp) => ml.Name == moduleViewModels.Name).Select((ml, mp) =>new ModulePermission {CreateBy=mp.CreateBy,CreateTime=mp.CreateTime }).ToPageList(moduleViewModels.PageIndex, moduleViewModels.PageSize, ref total);
+            //var models2 = dal.GetSimpleClient()
+            //                .Queryable<Module, ModulePermission>((ml, mp) => new object[] { JoinType.Left, ml.Id == mp.ModuleId })
+            //                .WhereIF(!string.IsNullOrEmpty(moduleViewModels.Name), (ml, mp) => ml.Name == moduleViewModels.Name)
+            //                .Select((ml, mp) =>new ModulePermission {CreateBy=mp.CreateBy,CreateTime=mp.CreateTime })
+            //                .ToPageList(moduleViewModels.PageIndex, moduleViewModels.PageSize, ref total);
 
             foreach (var s in models)
             {
                 viewModels.Add(IMapper.Map<ModuleViewModels>(s));
             }
             return viewModels;
+        }
+
+        /// <summary>
+        /// 获取单个菜单信息
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        public async Task<ModuleViewModels> GetModule(int Id)
+        {
+            var module =await QueryByID(Id);
+            return IMapper.Map<ModuleViewModels>(module);
+        }
+
+        /// <summary>
+        /// 添加单个菜单
+        /// </summary>
+        /// <param name="moduleViewModels"></param>
+        /// <returns></returns>
+
+        public async Task<bool> AddModule(ModuleViewModels moduleViewModels)
+        {
+            //转换model
+            var module = IMapper.Map<Module>(moduleViewModels);
+            return await Add(module)>0; 
+        }
+
+
+        /// <summary>
+        /// 更新Model
+        /// </summary>
+        /// <param name="moduleViewModels"></param>
+        /// <returns></returns>
+        public async Task<bool> UpdateModule(ModuleViewModels moduleViewModels)
+        {
+            //转换model
+            var module = IMapper.Map<Module>(moduleViewModels);
+            //忽略更新的字段
+            List<string> lstIgnoreColumns = new List<string>()
+            {
+                "ParentId","CreateId","CreateBy","CreateTime"
+            };
+            return await Update(module,null, lstIgnoreColumns,"");
+        }
+
+        /// <summary>
+        /// 删除菜单
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        public Task<bool> DeleteModule(int Id)
+        {
+            return DeleteById(Id);
         }
 
     }
