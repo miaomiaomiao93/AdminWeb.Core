@@ -263,12 +263,11 @@
             <param name="sub">角色</param>
             <returns></returns>
         </member>
-        <member name="M:AdminWeb.Core.Controllers.LoginController.GetJWTToken3(System.String,System.String)">
+        <member name="M:AdminWeb.Core.Controllers.LoginController.GetJWTToken3(AdminWeb.Core.Controllers.LoginController.User)">
             <summary>
             获取JWT的方法 3.0
             </summary>
-            <param name="name"></param>
-            <param name="pass"></param>
+            <param name="user"></param>
             <returns></returns>
         </member>
         <member name="M:AdminWeb.Core.Controllers.LoginController.Getjsonp(System.String,System.Int64,System.String,System.Int32,System.Int32)">
@@ -361,6 +360,13 @@
             </summary>
             <param name="uid"></param>
             <param name="rid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.UserRoleController.GetRoles(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="token"></param>
             <returns></returns>
         </member>
         <member name="T:AdminWeb.Core.Controllers.ValuesController">

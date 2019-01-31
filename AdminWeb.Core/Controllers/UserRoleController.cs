@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using AdminWeb.Core.IServices;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +9,7 @@ namespace AdminWeb.Core.Controllers
     /// <summary>
     /// 用户权限控制器所有接口
     /// </summary>
-    [Authorize("Permission")]
+    [Authorize(Policy = "Admin")]
     [Produces("application/json")]
     [Route("api/[controller]/[action]")]
     [ApiController]
@@ -82,7 +83,21 @@ namespace AdminWeb.Core.Controllers
                 data = model
             });
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public IActionResult GetRoles(string token)
+        {
+            return Ok(new
+            {
+                success = true,
+                token= token,
+                roles =new List<string>(){ "admins"}
+            });
+        }
 
 
 
