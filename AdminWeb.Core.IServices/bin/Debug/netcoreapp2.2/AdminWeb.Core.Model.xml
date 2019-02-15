@@ -616,6 +616,11 @@
             错误次数 
              </summary>
         </member>
+        <member name="P:AdminWeb.Core.Model.Models.sysUserInfo.uHeaderImgUrl">
+            <summary>
+            头像地址
+            </summary>
+        </member>
         <member name="T:AdminWeb.Core.Model.Models.Topic">
             <summary>
             博客文章
@@ -1108,6 +1113,61 @@
             </summary>
         </member>
         <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.Name">
+            <summary>
+            角色名
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.Description">
+             <summary>
+            描述
+             </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.OrderSort">
+             <summary>
+            排序
+             </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.Enabled">
+            <summary>
+            是否激活
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.CreateId">
+            <summary>
+            创建ID
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.CreateBy">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.ModifyId">
+            <summary>
+            修改ID
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.ModifyBy">
+            <summary>
+            修改者
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.ModifyTime">
             <summary>
             修改时间
             </summary>

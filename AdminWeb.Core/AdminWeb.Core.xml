@@ -280,6 +280,13 @@
             <param name="expiresAbsoulute"></param>
             <returns></returns>
         </member>
+        <member name="M:AdminWeb.Core.Controllers.LoginController.LoginOut(System.Int32)">
+            <summary>
+            登出
+            </summary>
+            <param name="uid"></param>
+            <returns></returns>
+        </member>
         <member name="T:AdminWeb.Core.Controllers.ModuleController">
             <summary>
             菜单控制器
@@ -347,11 +354,11 @@
             <param name="loginPWD"></param>
             <returns></returns>
         </member>
-        <member name="M:AdminWeb.Core.Controllers.UserRoleController.AddRole(System.String)">
+        <member name="M:AdminWeb.Core.Controllers.UserRoleController.AddRole(AdminWeb.Core.Model.ViewModels.RoleViewModel)">
             <summary>
             新建Role
             </summary>
-            <param name="roleName"></param>
+            <param name="roleViewModel"></param>
             <returns></returns>
         </member>
         <member name="M:AdminWeb.Core.Controllers.UserRoleController.AddUserRole(System.Int32,System.Int32)">
@@ -362,11 +369,11 @@
             <param name="rid"></param>
             <returns></returns>
         </member>
-        <member name="M:AdminWeb.Core.Controllers.UserRoleController.GetRoles(System.String)">
+        <member name="M:AdminWeb.Core.Controllers.UserRoleController.GetRoles(System.Int32)">
             <summary>
-            
+            获取当前的用户的角色以及用户的信息
             </summary>
-            <param name="token"></param>
+            <param name="uid"></param>
             <returns></returns>
         </member>
         <member name="T:AdminWeb.Core.Controllers.ValuesController">

@@ -1,5 +1,6 @@
 using AdminWeb.Core.IServices.BASE;
 using AdminWeb.Core.Model.Models;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace AdminWeb.Core.IServices
@@ -11,6 +12,8 @@ namespace AdminWeb.Core.IServices
 	{
 
         Task<UserRole> SaveUserRole(int uid, int rid);
+
+        List<string> ListUserRoles(int uid);
     }
 }
 

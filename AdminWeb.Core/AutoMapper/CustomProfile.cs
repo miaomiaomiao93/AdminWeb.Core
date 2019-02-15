@@ -23,6 +23,9 @@ namespace AdminWeb.Core.AutoMapper
 
             CreateMap<Module, ModuleViewModels>();
             CreateMap<ModuleViewModels, Module>();
+
+            CreateMap<Role, RoleViewModel>();
+            CreateMap<RoleViewModel, Role>();
         }
     }
 }

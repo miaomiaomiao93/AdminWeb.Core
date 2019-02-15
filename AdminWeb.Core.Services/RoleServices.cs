@@ -4,6 +4,9 @@ using AdminWeb.Core.Services.BASE;
 using AdminWeb.Core.Model.Models;
 using System.Threading.Tasks;
 using System.Linq;
+using AdminWeb.Core.Model.ViewModels;
+using AutoMapper;
+using System.Collections.Generic;
 
 namespace AdminWeb.Core.Services
 {	
@@ -14,19 +17,22 @@ namespace AdminWeb.Core.Services
     {
 	
         IRoleRepository dal;
-        public RoleServices(IRoleRepository dal)
+        IMapper IMapper;
+        public RoleServices(IRoleRepository dal, IMapper IMapper)
         {
             this.dal = dal;
             base.baseDal = dal;
+            this.IMapper = IMapper;
         }
-       /// <summary>
-       /// 
-       /// </summary>
-       /// <param name="roleName"></param>
-       /// <returns></returns>
-        public async Task<Role> SaveRole(string roleName)
+
+        /// <summary>
+        /// ±£´æ½ÇÉ«
+        /// </summary>
+        /// <param name="roleName"></param>
+        /// <returns></returns>
+        public async Task<Role> SaveRole(RoleViewModel roleViewModel)
         {
-            Role role = new Role(roleName);
+            Role role = IMapper.Map<Role>(roleViewModel);
             Role model = new Role();
             var userList = await dal.Query(a => a.Name == role.Name && a.Enabled);
             if (userList.Count > 0)
@@ -38,9 +44,7 @@ namespace AdminWeb.Core.Services
                 var id = await dal.Add(role);
                 model = await dal.QueryByID(id);
             }
-
             return model;
-
         }
     }
 }

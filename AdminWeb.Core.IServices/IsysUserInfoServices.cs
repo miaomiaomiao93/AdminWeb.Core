@@ -13,5 +13,7 @@ namespace AdminWeb.Core.IServices
 	{
         Task<sysUserInfo> SaveUserInfo(string loginName, string loginPWD);
         Task<string> GetUserRoleNameStr(string loginName, string loginPWD);
+        Task<sysUserInfo> CheckUserInfo(string loginName, string loginPWD);
+
     }
 }

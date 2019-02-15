@@ -12,6 +12,14 @@ namespace AdminWeb.Core.Model.Models
     /// </summary>
     public class sysUserInfo
     {
+
+        public sysUserInfo()
+        {
+            uCreateTime = DateTime.Now;
+            uUpdateTime = DateTime.Now;
+            uLastErrTime = DateTime.Now;
+        }
+
         /// <summary>
         /// 用户ID
         /// </summary>
@@ -59,6 +67,13 @@ namespace AdminWeb.Core.Model.Models
         ///错误次数 
         /// </summary>
         public int uErrorCount { get; set; }
+
+        /// <summary>
+        /// 头像地址
+        /// </summary>
+        [SugarColumn(Length = int.MaxValue, IsNullable = true)]
+        public string uHeaderImgUrl { get; set; }
+
 
     }
 }

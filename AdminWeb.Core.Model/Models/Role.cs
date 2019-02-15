@@ -59,7 +59,7 @@ namespace AdminWeb.Core.Model.Models
         /// <summary>
         /// 修改者
         /// </summary>
-        [SugarColumn( IsNullable = true)]
+        [SugarColumn(Length = 50, IsNullable = true)]
         public string ModifyBy { get; set; }
         /// <summary>
         /// 修改时间

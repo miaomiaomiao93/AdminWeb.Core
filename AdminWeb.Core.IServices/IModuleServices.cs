@@ -14,7 +14,7 @@ namespace AdminWeb.Core.IServices
 	{
         Task<ModuleViewModels> GetModule(int Id);
 
-        List<ModuleViewModels> ListPageModules(ModuleViewModels moduleViewModels);
+        TableModel<ModuleViewModels> ListPageModules(ModuleViewModels moduleViewModels);
 
         Task<bool> AddModule(ModuleViewModels moduleViewModels);
 

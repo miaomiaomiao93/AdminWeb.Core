@@ -185,10 +185,11 @@ namespace AdminWeb.Core
             #region MVC
 
             //注入全局异常捕获
+            //保证返回的json字符不变
             services.AddMvc(o =>
             {
                 o.Filters.Add(typeof(GlobalExceptionsFilter));
-            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddJsonOptions(op => op.SerializerSettings.ContractResolver =new Newtonsoft.Json.Serialization.DefaultContractResolver()); 
 
             #endregion
 
@@ -234,7 +235,7 @@ namespace AdminWeb.Core
                 audienceConfig["Issuer"],//发行人
                 audienceConfig["Audience"],//听众
                 signingCredentials,//签名凭据
-                expiration: TimeSpan.FromSeconds(60 * 2)//接口的过期时间
+                expiration: TimeSpan.FromSeconds(60 * 60 * 24)//接口的过期时间
                 );
 
 

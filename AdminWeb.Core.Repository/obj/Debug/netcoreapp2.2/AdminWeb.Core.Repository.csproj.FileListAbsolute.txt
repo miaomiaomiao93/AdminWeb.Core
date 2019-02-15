@@ -19,8 +19,8 @@ F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Repository\obj\Debug\netcoreap
 F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Repository\obj\Debug\netcoreapp2.2\AdminWeb.Core.Repository.dll
 F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Repository\obj\Debug\netcoreapp2.2\AdminWeb.Core.Repository.pdb
 F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Repository\obj\Debug\netcoreapp2.2\AdminWeb.Core.Repository.csprojResolveAssemblyReference.cache
-D:\Git\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Repository.deps.json
 D:\Git\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Repository.dll
+D:\Git\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Repository.deps.json
 D:\Git\AdminWeb.Core\AdminWeb.Core\bin\Debug\netcoreapp2.2\AdminWeb.Core.Repository.pdb
 D:\Git\AdminWeb.Core\AdminWeb.Core.Repository\obj\Debug\netcoreapp2.2\AdminWeb.Core.Repository.csprojAssemblyReference.cache
 D:\Git\AdminWeb.Core\AdminWeb.Core.Repository\obj\Debug\netcoreapp2.2\AdminWeb.Core.Repository.csproj.CoreCompileInputs.cache

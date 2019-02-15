@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AdminWeb.Core.IServices;
+using AdminWeb.Core.Model.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -54,12 +55,12 @@ namespace AdminWeb.Core.Controllers
         /// <summary>
         /// 新建Role
         /// </summary>
-        /// <param name="roleName"></param>
+        /// <param name="roleViewModel"></param>
         /// <returns></returns>
-        [HttpGet]
-        public async Task<object> AddRole(string roleName)
+        [HttpPost]
+        public async Task<object> AddRole([FromBody]RoleViewModel roleViewModel)
         {
-            var model = await roleServices.SaveRole(roleName);
+            var model = await roleServices.SaveRole(roleViewModel);
             return Ok(new
             {
                 success = true,
@@ -84,18 +85,21 @@ namespace AdminWeb.Core.Controllers
             });
         }
         /// <summary>
-        /// 
+        /// 获取当前的用户的角色以及用户的信息
         /// </summary>
-        /// <param name="token"></param>
+        /// <param name="uid"></param>
         /// <returns></returns>
         [HttpGet]
-        public IActionResult GetRoles(string token)
+        public async Task<IActionResult> GetRoles(int uid)
         {
+            var roles =userRoleServices.ListUserRoles(uid);
+            var user = await sysUserInfoServices.QueryByID(uid);
             return Ok(new
             {
                 success = true,
-                token= token,
-                roles =new List<string>(){ "admins"}
+                roles = roles,
+                name= user.uLoginName,
+                avatar=user.uHeaderImgUrl
             });
         }
 

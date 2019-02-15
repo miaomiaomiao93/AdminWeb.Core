@@ -24,14 +24,16 @@ namespace AdminWeb.Core.FrameWork.Services
             base.baseDal = dal;
         }
         /// <summary>
-        /// 
+        /// 保存用户信息
         /// </summary>
         /// <param name="loginName"></param>
         /// <param name="loginPWD"></param>
         /// <returns></returns>
         public async Task<sysUserInfo> SaveUserInfo(string loginName, string loginPWD)
         {
-            sysUserInfo sysUserInfo = new sysUserInfo(loginName, loginPWD);
+            sysUserInfo sysUserInfo = new sysUserInfo();
+            sysUserInfo.uLoginName = loginName;
+            sysUserInfo.uLoginPWD = loginPWD;
             sysUserInfo model = new sysUserInfo();
             var userList = await dal.Query(a => a.uLoginName == sysUserInfo.uLoginName && a.uLoginPWD == sysUserInfo.uLoginPWD);
             if (userList.Count > 0)
@@ -69,6 +71,18 @@ namespace AdminWeb.Core.FrameWork.Services
                 }
             }
             return roleName;
+        }
+
+        /// <summary>
+        /// 验证是否能登陆
+        /// </summary>
+        /// <param name="loginName"></param>
+        /// <param name="loginPWD"></param>
+        /// <returns></returns>
+        public async Task<sysUserInfo> CheckUserInfo(string loginName, string loginPWD)
+        {
+            var user = (await dal.Query(a => a.uLoginName == loginName && a.uLoginPWD == loginPWD)).FirstOrDefault();
+            return user != null ? user : null;
         }
     }
 }

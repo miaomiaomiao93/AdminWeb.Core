@@ -32,7 +32,7 @@ namespace AdminWeb.Core.Services
         /// </summary>
         /// <param name="moduleViewModels"></param>
         /// <returns></returns>
-        public List<ModuleViewModels> ListPageModules(ModuleViewModels moduleViewModels)
+        public TableModel<ModuleViewModels> ListPageModules(ModuleViewModels moduleViewModels)
         {
             List<ModuleViewModels> viewModels = new List<ModuleViewModels>();
 
@@ -55,7 +55,8 @@ namespace AdminWeb.Core.Services
             {
                 viewModels.Add(IMapper.Map<ModuleViewModels>(s));
             }
-            return viewModels;
+
+            return new TableModel<ModuleViewModels>() { Code = 1, Count = total, Data = viewModels, Msg = "success" };
         }
 
         /// <summary>
@@ -95,7 +96,7 @@ namespace AdminWeb.Core.Services
             //ºöÂÔ¸üÐÂµÄ×Ö¶Î
             List<string> lstIgnoreColumns = new List<string>()
             {
-                "ParentId","CreateId","CreateBy","CreateTime"
+                "ParentId","CreateId","CreateBy","CreateTime","ModifyId","ModifyBy","ModifyTime"
             };
             return await Update(module,null, lstIgnoreColumns,"");
         }

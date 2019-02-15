@@ -54,7 +54,7 @@ namespace AdminWeb.Core.Controllers
         public IActionResult ListPage([FromBody] ModuleViewModels moduleViewModels)
         {
             var models = moduleServices.ListPageModules(moduleViewModels);
-            return Ok(new TableModel<ModuleViewModels>() { Code = 1, Count = moduleViewModels.TotalCount, Data = models, Msg = "success" });
+            return Ok(models);
         }
 
         /// <summary>

@@ -118,7 +118,6 @@ namespace AdminWeb.Core.Controllers
         #endregion
 
 
-
         /// <summary>
         /// 获取JWT的方法 3.0
         /// </summary>
@@ -129,10 +128,9 @@ namespace AdminWeb.Core.Controllers
         public async Task<object> GetJWTToken3([FromBody] User user)
         {
             string jwtStr = string.Empty;
-            bool suc = false;
-
             var userInfo = await sysUserInfoServices.GetUserRoleNameStr(user.name, user.pass);
-            if (user != null)
+            var userData = await sysUserInfoServices.CheckUserInfo(user.name, user.pass);
+            if (!string.IsNullOrEmpty(userInfo))
             {
                 //如果是基于用户的授权策略，这里要添加用户;如果是基于角色的授权策略，这里要添加角色
                 var claims = new List<Claim> {
@@ -145,14 +143,15 @@ namespace AdminWeb.Core.Controllers
                 identity.AddClaims(claims);
 
                 var token = JwtToken.BuildJwtToken(claims.ToArray(), _requirement);
-                return new JsonResult(token);
+
+                return new JsonResult(new { status = true, data =token,uid= userData.uID });
             }
             else
             {
                 return new JsonResult(new
                 {
-                    Status = false,
-                    Message = "认证失败"
+                    status = false,
+                    message = "认证失败"
                 });
             }
         }
@@ -184,6 +183,18 @@ namespace AdminWeb.Core.Controllers
             string response = string.Format("\"value\":\"{0}\"", jwtStr);
             string call = callBack + "({" + response + "})";
             Response.WriteAsync(call);
+        }
+
+        /// <summary>
+        /// 登出
+        /// </summary>
+        /// <param name="uid"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("LoginOut")]
+        public IActionResult LoginOut(int uid)
+        {
+            return Ok(new { state = true });
         }
     }
 }
