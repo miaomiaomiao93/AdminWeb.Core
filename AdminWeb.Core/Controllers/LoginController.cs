@@ -4,9 +4,9 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using AdminWeb.Core.AuthHelper;
+using AdminWeb.Core.BasicData;
 using AdminWeb.Core.IServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -130,6 +130,7 @@ namespace AdminWeb.Core.Controllers
             string jwtStr = string.Empty;
             var userInfo = await sysUserInfoServices.GetUserRoleNameStr(user.name, user.pass);
             var userData = await sysUserInfoServices.CheckUserInfo(user.name, user.pass);
+
             if (!string.IsNullOrEmpty(userInfo))
             {
                 //如果是基于用户的授权策略，这里要添加用户;如果是基于角色的授权策略，这里要添加角色
@@ -143,6 +144,9 @@ namespace AdminWeb.Core.Controllers
                 identity.AddClaims(claims);
 
                 var token = JwtToken.BuildJwtToken(claims.ToArray(), _requirement);
+
+                BasicDataUser.UserName = userData.uLoginName ;
+                BasicDataUser.UserId = userData.uID;
 
                 return new JsonResult(new { status = true, data =token,uid= userData.uID });
             }

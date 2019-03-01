@@ -9,11 +9,12 @@ namespace AdminWeb.Core.Model
     /// </summary>
     public class PageModel
     {
-        public int PageIndex { get; set; }
 
-        public int PageSize { get; set; }
+        public int PageIndex { get; set; } = 1;
 
-        public int TotalCount { get; set; }
+        public int PageSize { get; set; } = 5;
+
+        public int TotalCount { get; set; } = 0;
 
         public string OrderByFileds { get; set; }
 

@@ -31,6 +31,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Swagger;
 using static AdminWeb.Core.SwaggerHelper.CustomApiVersion;
+using Newtonsoft.Json.Serialization;
 
 namespace AdminWeb.Core
 {
@@ -186,10 +187,11 @@ namespace AdminWeb.Core
 
             //注入全局异常捕获
             //保证返回的json字符不变
+            //全局日期格式化"yyyy-MM-dd HH:mm:ss"
             services.AddMvc(o =>
             {
                 o.Filters.Add(typeof(GlobalExceptionsFilter));
-            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddJsonOptions(op => op.SerializerSettings.ContractResolver =new Newtonsoft.Json.Serialization.DefaultContractResolver()); 
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddJsonOptions(op => op.SerializerSettings.ContractResolver =new Newtonsoft.Json.Serialization.DefaultContractResolver()).AddJsonOptions(options => { options.SerializerSettings.ContractResolver = new DefaultContractResolver(); options.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss"; });
 
             #endregion
 

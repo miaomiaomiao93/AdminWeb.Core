@@ -47,7 +47,7 @@ namespace AdminWeb.Core.AuthHelper
                         orderby item.Id
                         select new Permission
                         {
-                            Url = item.Module?.LinkUrl,
+                            Url = item.Module?.Path,
                             Role = item.Role?.Name,
                         }).ToList();
 

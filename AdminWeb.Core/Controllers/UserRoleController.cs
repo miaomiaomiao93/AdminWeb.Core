@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using AdminWeb.Core.AuthHelper;
+using AdminWeb.Core.BasicData;
 using AdminWeb.Core.IServices;
 using AdminWeb.Core.Model.ViewModels;
 using Microsoft.AspNetCore.Authorization;
@@ -102,8 +104,5 @@ namespace AdminWeb.Core.Controllers
                 avatar=user.uHeaderImgUrl
             });
         }
-
-
-
     }
 }

@@ -26,7 +26,6 @@ F:\Git VersionControl\AdminWeb.Core\AdminWeb.Core.Common\obj\Debug\netcoreapp2.2
 D:\Git\AdminWeb.Core\AdminWeb.Core.Common\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.deps.json
 D:\Git\AdminWeb.Core\AdminWeb.Core.Common\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.dll
 D:\Git\AdminWeb.Core\AdminWeb.Core.Common\bin\Debug\netcoreapp2.2\AdminWeb.Core.Common.pdb
-D:\Git\AdminWeb.Core\AdminWeb.Core.Common\obj\Debug\netcoreapp2.2\AdminWeb.Core.Common.csprojAssemblyReference.cache
 D:\Git\AdminWeb.Core\AdminWeb.Core.Common\obj\Debug\netcoreapp2.2\AdminWeb.Core.Common.csproj.CoreCompileInputs.cache
 D:\Git\AdminWeb.Core\AdminWeb.Core.Common\obj\Debug\netcoreapp2.2\AdminWeb.Core.Common.AssemblyInfoInputs.cache
 D:\Git\AdminWeb.Core\AdminWeb.Core.Common\obj\Debug\netcoreapp2.2\AdminWeb.Core.Common.AssemblyInfo.cs

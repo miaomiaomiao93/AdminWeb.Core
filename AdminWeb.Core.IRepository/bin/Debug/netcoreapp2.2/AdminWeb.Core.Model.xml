@@ -4,26 +4,6 @@
         <name>AdminWeb.Core.Model</name>
     </assembly>
     <members>
-        <member name="T:AdminWeb.Core.Model.Love">
-            <summary>
-            这是爱
-            </summary>
-        </member>
-        <member name="P:AdminWeb.Core.Model.Love.Id">
-            <summary>
-            id
-            </summary>
-        </member>
-        <member name="P:AdminWeb.Core.Model.Love.Name">
-            <summary>
-            姓名
-            </summary>
-        </member>
-        <member name="P:AdminWeb.Core.Model.Love.Age">
-            <summary>
-            年龄
-            </summary>
-        </member>
         <member name="T:AdminWeb.Core.Model.MessageModel`1">
             <summary>
             通用返回信息类
@@ -47,6 +27,26 @@
         <member name="P:AdminWeb.Core.Model.MessageModel`1.Datas">
             <summary>
             返回数据集合
+            </summary>
+        </member>
+        <member name="T:AdminWeb.Core.Model.Meta">
+            <summary>
+            元数据信息
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.Meta.Title">
+            <summary>
+            菜单标题（显示的文字）
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.Meta.Icon">
+            <summary>
+            使用的图标
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.Meta.Role">
+            <summary>
+            当前菜单可访问的角色
             </summary>
         </member>
         <member name="P:AdminWeb.Core.Model.Models.Advertisement.ImgUrl">
@@ -171,11 +171,6 @@
             接口API地址信息表
             </summary>
         </member>
-        <member name="P:AdminWeb.Core.Model.Models.Module.IsDeleted">
-             <summary>
-            获取或设置是否禁用，逻辑上的删除，非物理删除
-             </summary>
-        </member>
         <member name="P:AdminWeb.Core.Model.Models.Module.ParentId">
             <summary>
             父ID
@@ -186,24 +181,19 @@
             名称
             </summary>
         </member>
-        <member name="P:AdminWeb.Core.Model.Models.Module.LinkUrl">
+        <member name="P:AdminWeb.Core.Model.Models.Module.Path">
             <summary>
             菜单链接地址
             </summary>
         </member>
-        <member name="P:AdminWeb.Core.Model.Models.Module.Area">
+        <member name="P:AdminWeb.Core.Model.Models.Module.Component">
             <summary>
-            区域名称
+            当前组件
             </summary>
         </member>
-        <member name="P:AdminWeb.Core.Model.Models.Module.Controller">
+        <member name="P:AdminWeb.Core.Model.Models.Module.Redirect">
             <summary>
-            控制器名称
-            </summary>
-        </member>
-        <member name="P:AdminWeb.Core.Model.Models.Module.Action">
-            <summary>
-            Action名称
+            重定向地址
             </summary>
         </member>
         <member name="P:AdminWeb.Core.Model.Models.Module.Icon">
@@ -211,9 +201,9 @@
             图标
             </summary>
         </member>
-        <member name="P:AdminWeb.Core.Model.Models.Module.Code">
+        <member name="P:AdminWeb.Core.Model.Models.Module.Title">
             <summary>
-            菜单编号
+            菜单标题
             </summary>
         </member>
         <member name="P:AdminWeb.Core.Model.Models.Module.OrderSort">
@@ -224,16 +214,6 @@
         <member name="P:AdminWeb.Core.Model.Models.Module.Description">
             <summary>
             /描述
-            </summary>
-        </member>
-        <member name="P:AdminWeb.Core.Model.Models.Module.IsMenu">
-            <summary>
-            是否是右侧菜单
-            </summary>
-        </member>
-        <member name="P:AdminWeb.Core.Model.Models.Module.Enabled">
-            <summary>
-            是否激活
             </summary>
         </member>
         <member name="P:AdminWeb.Core.Model.Models.Module.CreateId">
@@ -265,6 +245,16 @@
             <summary>
             修改时间
             </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.Models.Module.Hidden">
+            <summary>
+            是否隐藏
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.Models.Module.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
         </member>
         <member name="T:AdminWeb.Core.Model.Models.ModulePermission">
             <summary>
@@ -1037,24 +1027,19 @@
             名称
             </summary>
         </member>
-        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.LinkUrl">
+        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Path">
             <summary>
             菜单链接地址
             </summary>
         </member>
-        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Area">
+        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Component">
             <summary>
-            区域名称
+            当前组件
             </summary>
         </member>
-        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Controller">
+        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Redirect">
             <summary>
-            控制器名称
-            </summary>
-        </member>
-        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Action">
-            <summary>
-            Action名称
+            重定向地址
             </summary>
         </member>
         <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Icon">
@@ -1062,9 +1047,9 @@
             图标
             </summary>
         </member>
-        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Code">
+        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Title">
             <summary>
-            菜单编号
+            菜单标题
             </summary>
         </member>
         <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.OrderSort">
@@ -1075,16 +1060,6 @@
         <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Description">
             <summary>
             /描述
-            </summary>
-        </member>
-        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.IsMenu">
-            <summary>
-            是否是右侧菜单
-            </summary>
-        </member>
-        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Enabled">
-            <summary>
-            是否激活
             </summary>
         </member>
         <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.CreateId">
@@ -1115,6 +1090,26 @@
         <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.ModifyTime">
             <summary>
             修改时间
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Hidden">
+            <summary>
+            是否隐藏
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.IsDeleted">
+             <summary>
+            获取或设置是否禁用，逻辑上的删除，非物理删除
+             </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Meta">
+            <summary>
+            元信息
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.ModuleViewModels.Children">
+            <summary>
+            子菜单
             </summary>
         </member>
         <member name="P:AdminWeb.Core.Model.ViewModels.RoleViewModel.IsDeleted">

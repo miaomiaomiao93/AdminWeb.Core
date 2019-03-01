@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AdminWeb.Core.BasicData;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,7 +39,6 @@ namespace AdminWeb.Core.AuthHelper
             }
             //var tokenHeader = httpContext.Request.Headers["Authorization"].ToString();
             var tokenHeader = httpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-
             TokenModelJWT tm = JwtHelper.SerializeJWT(tokenHeader);
 
             //授权

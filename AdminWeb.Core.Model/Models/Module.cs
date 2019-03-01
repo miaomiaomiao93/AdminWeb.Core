@@ -13,11 +13,6 @@ namespace AdminWeb.Core.Model.Models
     public class Module : RootEntity
     {
         /// <summary>
-        ///获取或设置是否禁用，逻辑上的删除，非物理删除
-        /// </summary>
-        [SugarColumn(IsNullable = true)]
-        public bool? IsDeleted { get; set; }
-        /// <summary>
         /// 父ID
         /// </summary>
         [SugarColumn(IsNullable = true)]
@@ -31,49 +26,37 @@ namespace AdminWeb.Core.Model.Models
         /// 菜单链接地址
         /// </summary>
         [SugarColumn(Length = 100, IsNullable = true)]
-        public string LinkUrl { get; set; }
+        public string Path { get; set; }
         /// <summary>
-        /// 区域名称
+        /// 当前组件
+        /// </summary>
+        [SugarColumn(Length = 50, IsNullable = true)]
+        public string Component { get; set; }
+        /// <summary>
+        /// 重定向地址
         /// </summary>
         [SugarColumn(Length = int.MaxValue, IsNullable = true)]
-        public string Area { get; set; }
-        /// <summary>
-        /// 控制器名称
-        /// </summary>
-        [SugarColumn(Length = int.MaxValue, IsNullable = true)]
-        public string Controller { get; set; }
-        /// <summary>
-        /// Action名称
-        /// </summary>
-        [SugarColumn(Length = int.MaxValue, IsNullable = true)]
-        public string Action { get; set; }
+        public string Redirect { get; set; }
         /// <summary>
         /// 图标
         /// </summary>
         [SugarColumn(Length = 100, IsNullable = true)]
         public string Icon { get; set; }
         /// <summary>
-        /// 菜单编号
+        /// 菜单标题
         /// </summary>
-        [SugarColumn(Length = 10, IsNullable = true)]
-        public string Code { get; set; }
+        [SugarColumn(Length = 50, IsNullable = true)]
+        public string Title { get; set; }
         /// <summary>
         /// 排序
         /// </summary>
+        [SugarColumn(IsNullable = false)]
         public int OrderSort { get; set; }
         /// <summary>
         /// /描述
         /// </summary>
-        [SugarColumn(Length = 100, IsNullable = true)]
+        [SugarColumn(Length = 500, IsNullable = true)]
         public string Description { get; set; }
-        /// <summary>
-        /// 是否是右侧菜单
-        /// </summary>
-        public bool IsMenu { get; set; }
-        /// <summary>
-        /// 是否激活
-        /// </summary>
-        public bool Enabled { get; set; }
         /// <summary>
         /// 创建ID
         /// </summary>
@@ -104,6 +87,18 @@ namespace AdminWeb.Core.Model.Models
         /// </summary>
         [SugarColumn(IsNullable = true)]
         public DateTime? ModifyTime { get; set; }
+
+        /// <summary>
+        /// 是否隐藏
+        /// </summary>
+        [SugarColumn(IsNullable = true)]
+        public bool Hidden { get; set; }
+
+        /// <summary>
+        ///获取或设置是否禁用，逻辑上的删除，非物理删除
+        /// </summary>
+        [SugarColumn(IsNullable = true)]
+        public bool? IsDeleted { get; set; }
 
     }
 }

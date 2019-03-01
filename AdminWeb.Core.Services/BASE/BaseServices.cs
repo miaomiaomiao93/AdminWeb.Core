@@ -14,7 +14,7 @@ namespace AdminWeb.Core.Services.BASE
         //public IBaseRepository<TEntity> baseDal = new BaseRepository<TEntity>();
         public IBaseRepository<TEntity> baseDal;//通过在子类的构造函数中注入，这里是基类，不用构造函数
 
-        //获取实对象实力
+        //获取实对象实例
         public SqlSugarClient GetSimpleClient()
         {
             return baseDal.GetSimpleClient();

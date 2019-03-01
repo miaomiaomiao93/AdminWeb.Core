@@ -51,7 +51,7 @@ namespace AdminWeb.Core.FrameWork.Services
         }
 
         /// <summary>
-        /// 
+        /// 获取用户的角色
         /// </summary>
         /// <param name="loginName"></param>
         /// <param name="loginPWD"></param>
@@ -83,6 +83,16 @@ namespace AdminWeb.Core.FrameWork.Services
         {
             var user = (await dal.Query(a => a.uLoginName == loginName && a.uLoginPWD == loginPWD)).FirstOrDefault();
             return user != null ? user : null;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="uid"></param>
+        /// <returns></returns>
+        public sysUserInfo SysUserInfo(int uid)
+        {
+            return baseDal.GetSimpleClient().GetSimpleClient<sysUserInfo>().GetById(uid);
         }
     }
 }

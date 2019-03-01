@@ -39,7 +39,7 @@
         </member>
         <member name="M:AdminWeb.Core.AuthHelper.JwtHelper.SerializeJWT(System.String)">
             <summary>
-            解析
+            解析  
             </summary>
             <param name="jwtStr"></param>
             <returns></returns>
@@ -206,6 +206,21 @@
             配置构造函数，用来创建关系映射
             </summary>
         </member>
+        <member name="T:AdminWeb.Core.BasicData.BasicDataUser">
+            <summary>
+            当前用户登录信息
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.BasicData.BasicDataUser.UserName">
+            <summary>
+            当前登录用户名
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.BasicData.BasicDataUser.UserId">
+            <summary>
+            当前用户Id
+            </summary>
+        </member>
         <member name="T:AdminWeb.Core.Controllers.BlogController">
             <summary>
             Blog控制器所有接口
@@ -292,11 +307,12 @@
             菜单控制器
             </summary>
         </member>
-        <member name="M:AdminWeb.Core.Controllers.ModuleController.#ctor(AdminWeb.Core.IServices.IModuleServices)">
+        <member name="M:AdminWeb.Core.Controllers.ModuleController.#ctor(AdminWeb.Core.IServices.IModuleServices,AdminWeb.Core.IServices.IsysUserInfoServices)">
             <summary>
             构造器
             </summary>
             <param name="moduleServices"></param>
+            <param name="IsysUserInfoServices"></param>
         </member>
         <member name="M:AdminWeb.Core.Controllers.ModuleController.GetModule(System.Int32)">
             <summary>
@@ -331,6 +347,12 @@
             删除菜单信息
             </summary>
             <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.ModuleController.ListModule">
+            <summary>
+            获取当前的路由菜单
+            </summary>
             <returns></returns>
         </member>
         <member name="T:AdminWeb.Core.Controllers.UserRoleController">

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AdminWeb.Core.BasicData;
 using AdminWeb.Core.IServices;
 using AdminWeb.Core.Model;
 using AdminWeb.Core.Model.ViewModels;
@@ -15,16 +16,20 @@ namespace AdminWeb.Core.Controllers
     /// </summary>
     [Route("api/Module")]
     [ApiController]
+    [Authorize(Policy = "Admin")]
     public class ModuleController : Controller
     {
         IModuleServices moduleServices;
+        IsysUserInfoServices IsysUserInfoServices;
         /// <summary>
         /// 构造器
         /// </summary>
         /// <param name="moduleServices"></param>
-        public ModuleController(IModuleServices moduleServices)
+        /// <param name="IsysUserInfoServices"></param>
+        public ModuleController(IModuleServices moduleServices, IsysUserInfoServices IsysUserInfoServices)
         {
             this.moduleServices = moduleServices;
+            this.IsysUserInfoServices = IsysUserInfoServices;
         }
 
         /// <summary>
@@ -66,6 +71,9 @@ namespace AdminWeb.Core.Controllers
         [HttpPost]
         public async Task<IActionResult> AddModule([FromBody] ModuleViewModels moduleViewModels)
         {
+            moduleViewModels.CreateId = BasicDataUser.UserId;
+            moduleViewModels.CreateBy = BasicDataUser.UserName;
+            moduleViewModels.CreateTime = DateTime.Now;
             var result = await moduleServices.AddModule(moduleViewModels);
             return Ok(new MessageModel<ModuleViewModels>()
             {
@@ -84,6 +92,9 @@ namespace AdminWeb.Core.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateModule([FromBody] ModuleViewModels moduleViewModels)
         {
+            moduleViewModels.ModifyId = BasicDataUser.UserId;
+            moduleViewModels.ModifyBy = BasicDataUser.UserName;
+            moduleViewModels.ModifyTime = DateTime.Now;
             var result = await moduleServices.UpdateModule(moduleViewModels);
             return Ok(new MessageModel<ModuleViewModels>()
             {
@@ -106,6 +117,22 @@ namespace AdminWeb.Core.Controllers
             {
                 Success = result,
                 Msg = "菜单删除成功"
+            });
+        }
+
+        /// <summary>
+        /// 获取当前的路由菜单
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("ListModule")]
+        public IActionResult ListModule()
+        {
+            var result = moduleServices.ListModules();
+            return Ok(new MessageModel<ModuleViewModels>()
+            {
+                Success = result.Count > 0 ? true : false,
+                Datas = result
             });
         }
     }

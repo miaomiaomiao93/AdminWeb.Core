@@ -63,7 +63,7 @@ namespace AdminWeb.Core.AuthHelper
         }
 
         /// <summary>
-        /// 解析
+        /// 解析  
         /// </summary>
         /// <param name="jwtStr"></param>
         /// <returns></returns>

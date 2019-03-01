@@ -15,5 +15,7 @@ namespace AdminWeb.Core.IServices
         Task<string> GetUserRoleNameStr(string loginName, string loginPWD);
         Task<sysUserInfo> CheckUserInfo(string loginName, string loginPWD);
 
+        sysUserInfo SysUserInfo(int uid);
+
     }
 }

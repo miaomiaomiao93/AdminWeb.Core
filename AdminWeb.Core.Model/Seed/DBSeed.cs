@@ -83,11 +83,16 @@ namespace AdminWeb.Core.Model.Models
                         {
                             IsDeleted = false,
                             Name = "values的接口信息",
-                            LinkUrl = "/api/values",
                             OrderSort = 1,
-                            IsMenu = false,
-                            Enabled = true,
+                            Hidden = false,
                             CreateTime = DateTime.Now,
+                            Component = "Loyout",
+                            Description="",
+                            Title="",
+                            Icon="",
+                            ParentId=0,
+                            Path="",
+                            Redirect="",
                         });
 
                 }
