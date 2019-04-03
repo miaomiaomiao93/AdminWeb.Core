@@ -25,10 +25,16 @@ namespace AdminWeb.Core.IServices
         /// <returns></returns>
         TableModel<ModuleViewModels> ListPageModules(ModuleViewModels moduleViewModels);
         /// <summary>
-        /// 获取当前可用的菜单路由
+        /// 获取当前可用的菜单路由(服务器)
         /// </summary>
         /// <returns></returns>
-        List<ModuleViewModels> ListModules();
+        List<ModuleViewModels> ListServerModules();
+
+        /// <summary>
+        /// 获取当前可用的菜单路由(路由器)
+        /// </summary>
+        /// <returns></returns>
+        List<ModuleViewModels> ListClientModules();
         /// <summary>
         /// 添加新的菜单
         /// </summary>

@@ -21,6 +21,7 @@ namespace AdminWeb.Core.Services
         IModuleRepository dal;
         IUserRoleServices userRoleServices;
         IMapper IMapper;
+        List<string> UserRoles;
         public ModuleServices(IModuleRepository dal, IMapper IMapper, IUserRoleServices userRoleServices)
         {
             this.dal = dal;
@@ -119,11 +120,32 @@ namespace AdminWeb.Core.Services
         {
             return await DeleteById(Id);
         }
+
         /// <summary>
-        /// 获取当前菜单树
+        /// 获取当前菜单树(客户机递归当前菜单)
         /// </summary>
         /// <returns></returns>
-        public List<ModuleViewModels> ListModules()
+        public List<ModuleViewModels> ListClientModules()
+        {
+            var modules = dal.GetSimpleClient().GetSimpleClient<Module>().GetList(s => s.IsDeleted == false);
+            List<ModuleViewModels> viewModels = new List<ModuleViewModels>();
+            foreach (var t in modules)
+            {
+                viewModels.Add(IMapper.Map<ModuleViewModels>(t));
+            }
+            foreach(var s in viewModels)
+            {
+                s.Meta.Role = new List<string>() { "Admin" };
+            }
+            return viewModels;
+        }
+
+
+        /// <summary>
+        /// 获取当前菜单树(服务器递归当前菜单)
+        /// </summary>
+        /// <returns></returns>
+        public List<ModuleViewModels> ListServerModules()
         {
             var modules = dal.GetSimpleClient().GetSimpleClient<Module>().GetList(s => s.IsDeleted == false);
             List<ModuleViewModels> viewModels = new List<ModuleViewModels>();
@@ -148,6 +170,9 @@ namespace AdminWeb.Core.Services
                 if (t.ParentId == 0)
                 {
                     modulePartentModels.Add(t);
+                    t.Meta.Icon = t.Icon;
+                    t.Meta.Title = t.Title;
+                    t.Meta.Role = UserRoles;
                 }
             }
             //清楚顶级父级菜单
@@ -175,8 +200,14 @@ namespace AdminWeb.Core.Services
                 if (s.ParentId == Id)
                 {
                     childrenViewModels.Add(s);
-                    moduleViewModels.Remove(s);
+                    s.Meta.Icon = s.Icon;
+                    s.Meta.Title = s.Title;
+                    s.Meta.Role = UserRoles;
                 }
+            }
+            foreach(var a in childrenViewModels)
+            {
+                moduleViewModels.Remove(a);
             }
             foreach (var t in childrenViewModels)
             {

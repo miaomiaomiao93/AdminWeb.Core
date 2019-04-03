@@ -128,7 +128,7 @@ namespace AdminWeb.Core.Controllers
         [Route("ListModule")]
         public IActionResult ListModule()
         {
-            var result = moduleServices.ListModules();
+            var result = moduleServices.ListClientModules();
             return Ok(new MessageModel<ModuleViewModels>()
             {
                 Success = result.Count > 0 ? true : false,
