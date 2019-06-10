@@ -1172,6 +1172,61 @@
             菜单展示model
             </summary>
         </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels.uID">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels.uLoginName">
+            <summary>
+            登录账号
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels.uLoginPWD">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels.uRealName">
+            <summary>
+            真实姓名
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels.uStatus">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels.uRemark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels.uCreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels.uUpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels.uLastErrTime">
+             <summary>
+            最后登录时间 
+             </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels.uErrorCount">
+             <summary>
+            错误次数 
+             </summary>
+        </member>
+        <member name="P:AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels.uHeaderImgUrl">
+            <summary>
+            头像地址
+            </summary>
+        </member>
         <member name="T:AdminWeb.Core.Model.ViewModels.TopgbViewModels">
             <summary>
             留言排名展示类

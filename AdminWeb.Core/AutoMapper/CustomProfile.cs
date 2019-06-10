@@ -26,6 +26,10 @@ namespace AdminWeb.Core.AutoMapper
 
             CreateMap<Role, RoleViewModel>();
             CreateMap<RoleViewModel, Role>();
+
+            CreateMap<sysUserInfo, sysUserInfoViewModels>();
+            CreateMap<sysUserInfoViewModels, sysUserInfo>();
+
         }
     }
 }

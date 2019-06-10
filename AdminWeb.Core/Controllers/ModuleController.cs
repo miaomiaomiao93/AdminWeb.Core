@@ -78,7 +78,7 @@ namespace AdminWeb.Core.Controllers
             return Ok(new MessageModel<ModuleViewModels>()
             {
                 Success = result,
-                Msg = "菜单添加成功"
+                Msg = result ? "菜单添加成功" : "菜单更新失败"
             });
         }
 
@@ -99,7 +99,7 @@ namespace AdminWeb.Core.Controllers
             return Ok(new MessageModel<ModuleViewModels>()
             {
                 Success = result,
-                Msg = "菜单更新成功"
+                Msg = result?"菜单更新成功": "菜单更新失败"
             });
         }
 
@@ -116,7 +116,7 @@ namespace AdminWeb.Core.Controllers
             return Ok(new MessageModel<ModuleViewModels>()
             {
                 Success = result,
-                Msg = "菜单删除成功"
+                Msg = result? "菜单删除成功": "菜单删除失败"
             });
         }
 

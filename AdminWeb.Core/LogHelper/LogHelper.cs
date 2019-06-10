@@ -277,7 +277,5 @@ namespace AdminWeb.Core.Log
         {
             GetLogger(source).Fatal(message, exception);
         }
-
-
     }
 }

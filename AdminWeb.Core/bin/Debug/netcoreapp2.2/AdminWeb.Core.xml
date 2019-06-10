@@ -355,6 +355,59 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:AdminWeb.Core.Controllers.sysUserInfoController">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.sysUserInfoController.#ctor(AdminWeb.Core.IServices.IsysUserInfoServices)">
+            <summary>
+            
+            </summary>
+            <param name="isysUserInfoServices"></param>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.sysUserInfoController.GetSysUserInfo(System.Int32)">
+            <summary>
+            获取单个用户
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.sysUserInfoController.ListPage(AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels)">
+            <summary>
+            获取用户分页
+            </summary>
+            <param name="sysUserInfoViewModels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.sysUserInfoController.AddsysUserInfo(AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="sysUserInfoViewModels"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.sysUserInfoController.UpdatesysUserInfo(AdminWeb.Core.Model.ViewModels.sysUserInfoViewModels)">
+            <summary>
+            更新用户信息
+            </summary>
+            <param name="sysUserInfoViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.sysUserInfoController.DeletesysUserInfo(System.Int32)">
+            <summary>
+            删除用户信息
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AdminWeb.Core.Controllers.sysUserInfoController.UploadFiles(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            上传图片
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
         <member name="T:AdminWeb.Core.Controllers.UserRoleController">
             <summary>
             用户权限控制器所有接口

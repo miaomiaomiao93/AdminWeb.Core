@@ -398,6 +398,12 @@ namespace AdminWeb.Core
             app.UseCookiePolicy();
             // 返回错误码
             app.UseStatusCodePages();//把错误码返回前台，比如是404
+            //允许下载wwwroot下的资源
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                //设置不限制content-type
+                ServeUnknownFileTypes = true
+            });
 
             app.UseMvc();
         }

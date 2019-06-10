@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdminWeb.Core.Model.ViewModels
 {
-    public class ModuleViewModels:PageModel
+    public class ModuleViewModels : PageModel
     {
         public ModuleViewModels()
         {
